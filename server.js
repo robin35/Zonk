@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 
 // Requiring the `User` model for accessing the `users` collection
-const User = require("./userModel.js");
+const User = require("./src/components/User/userModel");
 
 // Initialize Express
 const app = express();

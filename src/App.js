@@ -1,5 +1,10 @@
 import React from "react";
 import Create from "./pages/Create";
+import NavTabs from "./components/NavTabs/index";
+import Trivia from "./pages/Trivia";
+import NewGame from "./pages/NewGame";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
     return (
