@@ -21,97 +21,97 @@ export function TotalPoints () {
 // points board will have 25 options
 export function PointBoard () {
     return (
-        <Container>
+        <div className="container">
         <div className="table">
             <table>
                 <tr>
                     <th>
-                        {RandomNumber}
+                       <RandomNumber/>
                     </th>
                     <th>
-                        {Zonk}
+                        <Zonk />
                     </th>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {RandomNumber}
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        {Zonk}
-                    </th>
-                    <th>
-                        {RandomNumber}
-                    </th>
-                    <th>
-                        {RandomNumber}
-                    </th>
-                    <th>
-                        {RandomNumber}
-                    </th>
-                    <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        {RandomNumber}
+                        <Zonk/>
                     </th>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {Zonk}
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        {RandomNumber}
-                    </th>
-                    <th>
-                        {RandomNumber}
-                    </th>
-                    <th>
-                        {RandomNumber}
-                    </th>
-                    <th>
-                        {Zonk}
-                    </th>
-                    <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {Zonk}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {RandomNumber}
+                        <RandomNumber/>
                     </th>
                     <th>
-                        {RandomNumber}
+                        <Zonk/>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                        <Zonk/>
+                    </th>
+                    <th>
+                        <RandomNumber/>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                        <Zonk/>
+                    </th>
+                    <th>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                        <RandomNumber/>
                     </th>
                 </tr>
             </table>
         </div>
-        </Container>
+        </div>
     );
 }
 

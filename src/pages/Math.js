@@ -4,8 +4,9 @@ export function RandomNumber () {
     let num= Math.floor((Math.random() * 500) + 1);
     return (
         <div>
-          {num}          
+            {num}          
         </div>
+        
     );
 }
 
