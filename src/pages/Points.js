@@ -1,12 +1,13 @@
 import React from "react";
 import { RandomNumber, Zonk } from "./Math"
+import { Container, Row, Col } from "../components/Grid";
 
 
 export function TotalPoints () {
-    let points;
-    if(RandomNumber) {
+    let points = 0;
+    if("getpoints" === RandomNumber) {
        points = points + RandomNumber;
-    } else if (Zonk){
+    } else if ("getpoints" === Zonk){
         points = 0;
     } else {
         points = 0;
@@ -21,97 +22,131 @@ export function TotalPoints () {
 // points board will have 25 options
 export function PointBoard () {
     return (
-        <div className="container">
+        <Container >
+            <Row>
+        
+             <div className="score align-right">
+                Total Points <TotalPoints/>
+            </div>
+        </Row>
+        <Row>
+            <Col size="md-6">
+                <h3>Quiz</h3>
+            </Col>
+            <Col size="md-6">
         <div className="table">
             <table>
                 <tr>
                     <th>
+                        <div className="hide-on-click">
+                            <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg" alt="egg" width="50" height="75"/></button>
                        <RandomNumber/>
+                       </div>
                     </th>
                     <th>
-                        <Zonk />
-                    </th>
-                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
-                        <RandomNumber/>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <Zonk/>
-                    </th>
-                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
-                        <RandomNumber/>
-                    </th>
-                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                 </tr>
                 <tr>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
-                        <Zonk/>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                        <Zonk/>
-                    </th>
-                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                 </tr>
                 <tr>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
-                        <Zonk/>
-                    </th>
-                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                     <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
+                        <RandomNumber/>
+                    </th>
+                    <th>
+                    <button className="getpoints"><img src="https://previews.123rf.com/images/twindesign/twindesign1302/twindesign130200056/18242696-dinosaur-egg.jpg"  alt="egg" width="50" height="75"/></button>
                         <RandomNumber/>
                     </th>
                 </tr>
             </table>
         </div>
-        </div>
+            </Col>
+        </Row>
+    </Container>
     );
 }
 

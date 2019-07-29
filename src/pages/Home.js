@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Container, Row, Col } from "../components/Grid";
 
 // function Login() {
 //     return (
@@ -34,6 +35,13 @@ handleFormSubmit = event => {
 
 render() {
     return (
+        <Container>
+            <Row>
+                <Col size="md-6">
+                    <h3>New User Information</h3>
+                </Col>
+                <Col size="md-6">
+
         <form>
             <p>Username: {this.state.username}</p>
             <p>Passowrd: {this.state.password}</p>
@@ -53,6 +61,10 @@ render() {
             />
             <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
+
+                </Col>
+            </Row>
+        </Container>
         
     );
 
@@ -60,3 +72,4 @@ render() {
 }
 
 export default Form;
+
