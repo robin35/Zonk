@@ -31,14 +31,14 @@ function Navbar() {
               Create
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               to="/trivia"
               className={window.location.pathname === "/trivia" ? "nav-link active" : "nav-link"}
             >
               Trivia
             </Link>
-          </li>
+          </li> */}
           <li className="nav-item">
             <Link
               to="/newgame"

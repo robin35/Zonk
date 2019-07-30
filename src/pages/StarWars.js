@@ -7,33 +7,19 @@ import Rebelion from "../images/rebelion.png";
 import StormTrooper from "../images/stormtrooper.jpg";
 import StarWars from "../images/starwars.jpg";
 import DarthVarder from "../images/darthvader.jpg";
+import { TotalPoints, PointBoard } from "./Points";
 
-export function MissedQuestion () {
-    return (
-        <div className="incorrect">
+// export function MissedQuestion () {
+//     return (
+//         <div className="incorrect">
             
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-export function TotalPoints () {
-    let points = 0;
-    if("getpoints" === RandomNumber) {
-       points = points + RandomNumber;
-    } else if ("getpoints" === Zonk){
-        points = 0;
-    } else {
-        points = 0;
-    }
 
-    return (
-        <div className="points">
-            <h3>{points}</h3>
-        </div>
-        ) 
-}
 // points board will have 25 options
-export function PointBoard () {
+ function StarWarsBoard () {
     return (
         <Container >
             <Row>
@@ -163,3 +149,4 @@ export function PointBoard () {
     );
 }
 
+export default StarWarsBoard;

@@ -1,11 +1,20 @@
 import React from "react";
 import Create from "./pages/Create";
 import NavTabs from "./components/NavTabs/index";
-import Trivia from "./pages/Trivia";
+// import Trivia from "./pages/Trivia";
 import NewGame from "./pages/NewGame";
 import Home from "./pages/Home";
 import { TotalPoints, PointBoard } from "./pages/Points";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Jurassic from "./pages/Jurassic";
+import StarWarsBoard from "./pages/StarWars";
+import Music from "./pages/Music";
+import Soccer from "./pages/Soccer";
+import Basketball from "./pages/Basketball";
+import Baseball from "./pages/Baseball";
+import MathTrivia from "./pages/MathTrivia";
+import Science from "./pages/Science";
+import SocialStudies from "./pages/SocialStudies";
 
 function App() {
     return (
@@ -14,9 +23,17 @@ function App() {
           <NavTabs />
           <Route exact path="/" component={Home} />
           <Route exact path="/create" component={Create} />
-          <Route exact path="/trivia" component={Trivia} />
-          <Route path="/newgame" component={NewGame} />
+          <Route exact path="/newgame" component={NewGame} />
           <Route exact path="/game" component={PointBoard} />
+          <Route exact path="/jurassic" component={Jurassic} />
+          <Route exact path="/starwars" component={StarWarsBoard} />
+          <Route exact path="/80music" component={Music}/>
+          <Route exact path="/soccertrivia" component={Soccer} />
+          <Route exact path="/basketballtrivia" component={Basketball} />
+          <Route exact path="/baseballtrivia" component={Baseball} />
+          <Route exact path="/math" component={MathTrivia} />
+          <Route exact path="/socialstudies" component={SocialStudies} />
+          <Route exact path="/science" component={Science} />
         </div>
       </Router>
 
