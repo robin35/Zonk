@@ -4,7 +4,7 @@ import NavTabs from "./components/NavTabs/index";
 // import Trivia from "./pages/Trivia";
 import NewGame from "./pages/NewGame";
 import Home from "./pages/Home";
-import { TotalPoints, PointBoard } from "./pages/Points";
+import PointBoard from "./pages/Points";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Jurassic from "./pages/Jurassic";
 import StarWarsBoard from "./pages/StarWars";

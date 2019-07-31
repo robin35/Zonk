@@ -1,11 +1,20 @@
 import React from "react";
+import Egg from "../images/egg.jpg";
 
-export function RandomNumber () {
+export function RandomNumber (props) {
     let num= Math.floor((Math.random() * 500) + 1);
    if (num < 150) {
-      return <h5>Zonk</h5>;
+      return (
+      <button onClick={() => {props.handleIncrement("Zonk") }} className="getpoints">
+          {props.children ?  props.children : (<img src={Egg} alt="egg" width="50" height="75"/>)}
+      </button>
+      )
    } else {
-      return num;
+      return (
+        <button onClick={() => {props.handleIncrement(num) }} className="getpoints">
+        {props.children ?  props.children : (<img src={Egg} alt="egg" width="50" height="75"/>)}
+        </button>
+      );
    }
     // return (
     //     <div>
