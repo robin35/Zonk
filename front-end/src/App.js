@@ -1,19 +1,42 @@
+//==================================================================================================================================
+// Dependencies
+//==================================================================================================================================
+
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import Navbar from './components/Landing/Navbar';
-import Login from './components/Landing/Login';
-//import Questions from './components/Questions/AddQuestions';
+import Join from './components/Login/Join';
+import Login from './components/Login/Login';
 
-//import './App.css';
 
-function App() {
+// import Questions from './components/Questions/AddQuestions';
+// import './style.css';
+
+import './App.css';
+
+
+//==================================================================================================================================
+// React
+//==================================================================================================================================
+
+const App = () => {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
 
-        <Navbar />
-        <Login />
-        {/* <Questions /> */}
+          <Navbar />
+          <Route exact path='/' component={Login} />
+          <Switch>
+            <Route exact path= '/join' component={Join} />
+            <Route exact path= '/login' component={Login} />
+          </Switch>
 
-    </div>
+
+          {/* <Questions /> */}
+
+      </div>
+    </Router>
   );
 }
 
