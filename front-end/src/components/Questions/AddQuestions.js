@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import CreateQuestion from './pages/CreateQuestion';
-import CreateAnswers from './pages/CreateAnswers';
-import '../src/pages/style.css';
+import CreateQuestion from './CreateQuestion';
+import CreateAnswers from './CreateAnswers';
+import '../../../src/style.css';
 
 
-const App = () => {
+const AddQuestions = () => {
 
     return (
         <form className="ui container form">
@@ -27,4 +26,4 @@ const App = () => {
     );
 };
 
-ReactDOM.render(<App />,document.querySelector('#root'));
+export default AddQuestions;

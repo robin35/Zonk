@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
+const jwt = require("jsonwebtoken");
+const config = require('config');
 const {check, validationResult} = require ('express-validator');
 
 // This connects to the User.js file in the models folder which exports a User constructor object that holds the mongoose mongoDB fields
@@ -24,16 +26,16 @@ router.post(
         return res.status(400).json({ errors: errors.array() });
     }
 
+    // pass names from req body to object
     const { name, email, password } = req.body;
 
     try {
-
         // See if user exists
         let user = await User.findOne({ email });
         if(user) {
             return res.status(400).json({ errors: [{ msg: 'User already exists' }] });
         }
-
+        
         // create a new instance of the User constructor
         user = new User({ 
             name,
@@ -51,18 +53,29 @@ router.post(
 
 
         // Return jsonwebtoken - check in MongoDB
-        res.send('User registered')
+        // mongodb ID is "_id:" but mongoose configures it so that we can use ".id"
+        // the payload secret is in default.json
+        //res.send('User registered')
+
+        const payload = {
+            user: {
+                id: user.id
+            }
+        }
+
+        jwt.sign(
+            payload, 
+            config.get("jwtSecret"),
+            { expiresIn: 360000 },
+            (err, token) => {
+                res.json({ token });
+            });
+
     } catch(err) {
         console.error(err.message);
         res.status(500).send('Server error');
     }
 });
-
-
-
-
-
-
 
 
 module.exports = router;
