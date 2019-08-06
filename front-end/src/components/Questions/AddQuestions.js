@@ -2,7 +2,8 @@ import React from 'react';
 
 import CreateQuestion from './CreateQuestion';
 import CreateAnswers from './CreateAnswers';
-import '../../style.css';
+import './quest.css';
+
 
 
 const AddQuestions = () => {
