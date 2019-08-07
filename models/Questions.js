@@ -13,36 +13,24 @@ const QuestionsSchema = new mongoose.Schema({
         type: String,
         required: true     
     },
-    choiceA: {
+    answerA: {
         type: String,
         required: true
     },
-    choiceB: {
+    answerB: {
         type: String,
         required: true
     },
-    choiceC: {
+    answerC: {
         type: String,
         required: true 
     },
-    choiceD: {
+    answerD: {
         type: String,
         required: true
     },
-    correctA: {
-        type: Boolean,
-        required: true
-    },
-    correctB: {
-        type: Boolean,
-        required: true
-    },
-    correctC: {
-        type: Boolean,
-        required: true
-    },
-    correctD: {
-        type: Boolean,
+    correct: {
+        type: String,
         required: true
     }
 });

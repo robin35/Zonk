@@ -4,7 +4,7 @@
     color: rgb(9, 60, 155);
   }
   
-  .questBody {
+  body {
     background-image: url("/images/BG1.jpg");
     background-repeat: no-repeat;
     background-size: cover;

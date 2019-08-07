@@ -28,6 +28,7 @@ app.get('/', (req,res) => res.send('API Running'));
 app.use('/api/addquestion', require('./routes/api/addquestion'));
 app.use('/api/gameboard', require('./routes/api/gameboard'));
 app.use('/api/home', require('./routes/api/home'));
+app.use('/api/stats', require('./routes/api/stats'));
 app.use('/api/userauth', require('./routes/api/userauth'));
 app.use('/api/userregister', require('./routes/api/userregister'));
 
