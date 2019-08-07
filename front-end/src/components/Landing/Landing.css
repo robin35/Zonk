@@ -13,7 +13,11 @@
 	background: #f6f5f7;
 }
 
+<<<<<<< HEAD
 body {
+=======
+.landingBody {
+>>>>>>> 6f54519eeeae00a872e48dd0b88214127422e383
 	background: #f6f5f7;
 	background-image: url("https://thumbs.dreamstime.com/z/lightning-bolts-pattern-seamless-lighning-stars-funky-hand-drawn-cartoon-doodles-repeating-texture-vector-illustration-132561037.jpg");
 	display: flex;

@@ -6,6 +6,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/Landing/Navbar';
+
 import Landing from './components/Landing/Landing';
 
 import Join from './components/Login/Join';
