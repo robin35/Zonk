@@ -10,6 +10,7 @@
 	left: 0;
 	width: 100%;
 	height: 60px;
+	background: #f6f5f7;
 }
 
 .landingBody {
@@ -174,8 +175,8 @@ input {
 
 .overlay {
 	background: #FF416C;
-	background: -webkit-linear-gradient(to right, rgb(104, 204, 163), rgb(49, 90, 70));
-	background: linear-gradient(to right, rgb(49, 90, 70), rgb(76, 145, 116));
+	background: -webkit-linear-gradient(to right, rgb(145, 231, 195), rgb(49, 90, 70));
+	background: linear-gradient(to right, rgb(36, 65, 51), rgb(120, 202, 168));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
