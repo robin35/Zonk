@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
-const QuestionsSchema = new mongoose.Schema({
+// Save a reference to the Schema constructor
+var Schema = mongoose.Schema;
+
+// Create a new object from the Schema constructor
+const QuestionsSchema = new Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user'
@@ -35,4 +39,9 @@ const QuestionsSchema = new mongoose.Schema({
     }
 });
 
-module.exports = Questions = mongoose.model('questions', QuestionsSchema);
+
+// Create the model using mongoose's model method
+const Questions = mongoose.model("Questions", QuestionsSchema)
+
+// Export the model
+module.exports = Questions;
