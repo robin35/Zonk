@@ -1,14 +1,14 @@
+const User = require('../../models/User');
+
 const express = require('express');
+const {check, validationResult} = require ('express-validator');
 const router = express.Router();
+
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 const config = require('config');
-const {check, validationResult} = require ('express-validator');
 
-// This connects to the User.js file in the models folder which exports a User constructor object that holds the mongoose mongoDB fields
-const User = require('../../models/User');
 
-//this is basically a test route
 // @route   POST api/registeruser
 // @desc    Register user
 // @access  Public

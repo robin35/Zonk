@@ -11,11 +11,12 @@ const QuestionsSchema = new Schema({
     },
     topic: {
         type: String,
-        required: true     
+        required: true
     },
-    question: {
+    questiontext: {
         type: String,
-        required: true     
+        required: true,
+        unique: true
     },
     answerA: {
         type: String,
@@ -27,7 +28,7 @@ const QuestionsSchema = new Schema({
     },
     answerC: {
         type: String,
-        required: true 
+        required: true
     },
     answerD: {
         type: String,

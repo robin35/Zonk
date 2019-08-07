@@ -1,27 +1,22 @@
+const Question = require('../../models/Questions');
+
 const express = require('express');
+const {check, validationResult} = require ('express-validator');
+
 const router = express.Router();
 
-//this is basically a test route
-// @route   GET api/addquestion
-// @desc    Test route
-// @access  Public
-router.get('/', (req, res) => res.send('AddQuestion route'));
 
+//router.get('/', (req, res) => res.send('AddQuestion route'));
 
-
-// This connects to the User.js file in the models folder which exports a User constructor object that holds the mongoose mongoDB fields
-const User = require('../../models/Questions');
-
-//this is basically a test route
-// @route   POST api/registeruser
-// @desc    Register user
+// @route   POST api/addquestion
+// @desc    Post new questions to database
 // @access  Public
 
 router.post(
     '/', 
     [
         check('topic', 'Topic is required').not().isEmpty(),
-        check('question', 'Question is required').not().isEmpty(),
+        check('questiontext', 'Question is required').not().isEmpty(),
         check('answera', 'Answer A is required').not().isEmpty(),
         check('answerb', 'Answer B is required').not().isEmpty(),
         check('answerc', 'Answer C is required').not().isEmpty(),
@@ -35,33 +30,33 @@ router.post(
     }
 
     // pass names from req body to object
-    const { name, email, password } = req.body;
+    const { topic, questiontext, answera, answerb, answerc, answerd, corret } = req.body;
 
     try {
-        // See if user exists
-        let user = await User.findOne({ email });
-        if(user) {
-            return res.status(400).json({ errors: [{ msg: 'User already exists' }] });
+        // See if question exists
+        let question = await Question.findOne({ questiontext });
+        if(question) {
+            return res.status(400).json({ errors: [{ msg: 'Question already exists' }] });
         }
         
-        // create a new instance of the User constructor
-        user = new User({ 
-            name,
-            email,
-            password
+        // create a new instance of the Question constructor
+        question = new Question({ 
+            topic, 
+            questiontext, 
+            answera, 
+            answerb, 
+            answerc, 
+            answerd, 
+            corret 
         })
 
-        // Encrypt password.  Create the "salt"
-        const salt = await bcrypt.genSalt(10);
+        // Save the to the DB
+        await question.save();
 
-        user.password = await bcrypt.hash(password, salt);
-
-        // Save the user to the DB
-        await user.save();
-
-
-
-
-
+    } catch(err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
+    }
+});
 
 module.exports = router;

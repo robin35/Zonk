@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-
-//import '../Landing/Landing.css';
+// import '../Landing/Landing.css';
 
 
 const Join = () => {
@@ -55,8 +55,9 @@ const Join = () => {
 
     // This is the body of the form
     return (
+        <div className="container" id="container">
+        <div className="sign-up-container">
         <form onSubmit={event => onSubmit(event)}>
-            <div className="form-container sign-up-container">
                 <h1>Create Account</h1>
                 <input 
                     type="text" 
@@ -82,11 +83,17 @@ const Join = () => {
                     onChange={event => onChange(event)}
                     minLength='6'
                     required />
+               
+                <div className='buttons'>
+                    <Link to='/join'>
+                        <button className="btn btn-primary" id="signUp">Sign Up</button>
+                    </Link>
+                </div>
 
-                <input type="submit" className="btn btn-primary" value="Sign Up" />
-                    
+                </form>
             </div>
-        </form>
+            </div>
+
     )
 };
     

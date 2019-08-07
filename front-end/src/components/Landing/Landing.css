@@ -15,7 +15,7 @@
 
 body {
 	background: #f6f5f7;
-	background-image: url("https://thumbs.dreamstime.com/z/lightning-bolts-pattern-seamless-lighning-stars-funky-hand-drawn-cartoon-doodles-repeating-texture-vector-illustration-132561037.jpg");
+	/* background-image: url("https://thumbs.dreamstime.com/z/lightning-bolts-pattern-seamless-lighning-stars-funky-hand-drawn-cartoon-doodles-repeating-texture-vector-illustration-132561037.jpg"); */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -79,10 +79,10 @@ button:focus {
 	outline: none;
 }
 
-button.ghost {
+/* button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
-}
+} */
 
 form {
 	background-color: #FFFFFF;
@@ -122,22 +122,25 @@ input {
 	transition: all 0.6s ease-in-out;
 }
 
+/* NOTE:  I had to comment this out so that the fields would display because the opacity is 0;
 .sign-in-container {
 	left: 0;
 	width: 50%;
 	z-index: 2;
-}
+} */
 
 .container.right-panel-active .sign-in-container {
 	transform: translateX(100%);
 }
 
+
+/* NOTE:  I had to comment this out so that the fields would display because the opacity is 0;
 .sign-up-container {
 	left: 0;
 	width: 50%;
 	opacity: 0;
 	z-index: 1;
-}
+} */
 
 .container.right-panel-active .sign-up-container {
 	transform: translateX(100%);

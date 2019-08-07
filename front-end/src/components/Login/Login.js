@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 //import '../Landing/Landing.css';
 
@@ -29,7 +30,7 @@ const Login = () => {
     return (
 
         <form onSubmit={event => onSubmit(event)}>
-            <div className="form-container sign-in-container">
+            <div className="sign-in-container">
                 <h1>Sign In</h1>
 
                 <input 
@@ -51,7 +52,13 @@ const Login = () => {
 
                 {/* <a href="#">Forgot your password?</a> */}
 
-                <input type="submit" className="btn btn-primary" value="Sign In" />
+                <div className='buttons'>
+                    <Link to='/join'>
+                        <button className="btn btn-primary" id="signUp">Sign In</button>
+                    </Link>
+                </div>
+
+
             </div>
         </form>
     );
