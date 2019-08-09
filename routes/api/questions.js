@@ -1,3 +1,7 @@
+//=====================================================================================================================
+// Dependencies
+//=====================================================================================================================
+
 const Question = require('../../models/Questions');
 
 const express = require('express');
@@ -16,7 +20,7 @@ router.post(
     '/', 
     [
         check('topic', 'Topic is required').not().isEmpty(),
-        check('questiontext', 'Question is required').not().isEmpty(),
+        check('question', 'Question is required').not().isEmpty(),
         check('answera', 'Answer A is required').not().isEmpty(),
         check('answerb', 'Answer B is required').not().isEmpty(),
         check('answerc', 'Answer C is required').not().isEmpty(),
@@ -30,33 +34,38 @@ router.post(
     }
 
     // pass names from req body to object
-    const { topic, questiontext, answera, answerb, answerc, answerd, corret } = req.body;
+    const { topic, question, answera, answerb, answerc, answerd, correct } = req.body;
 
     try {
         // See if question exists
-        let question = await Question.findOne({ questiontext });
-        if(question) {
+        let questions = await Question.findOne({ question });
+        if(questions) {
             return res.status(400).json({ errors: [{ msg: 'Question already exists' }] });
         }
         
         // create a new instance of the Question constructor
-        question = new Question({ 
+        questions = new Question({ 
             topic, 
-            questiontext, 
+            question, 
             answera, 
             answerb, 
             answerc, 
             answerd, 
-            corret 
+            correct 
         })
 
         // Save the to the DB
-        await question.save();
+        await questions.save();
 
     } catch(err) {
         console.error(err.message);
         res.status(500).send('Server error');
     }
 });
+
+
+//=====================================================================================================================
+// Export router to use in server.js
+//=====================================================================================================================
 
 module.exports = router;

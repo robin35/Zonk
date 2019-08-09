@@ -1,36 +1,40 @@
+//=====================================================================================================================
+// Dependencies
+//=====================================================================================================================
+
 const mongoose = require('mongoose');
 
-// Save a reference to the Schema constructor
+
+//=====================================================================================================================
+// Create a new object from the mongoose Schema constructor object.  
+// This creates the mongoDB document.
+//=====================================================================================================================
+
 var Schema = mongoose.Schema;
 
-// Create a new object from the Schema constructor
-const QuestionsSchema = new Schema({
-    user: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'user'
-    },
+const QuestionSchema = new Schema({
     topic: {
         type: String,
         required: true
     },
-    questiontext: {
+    question: {
         type: String,
         required: true,
         unique: true
     },
-    answerA: {
+    answera: {
         type: String,
         required: true
     },
-    answerB: {
+    answerb: {
         type: String,
         required: true
     },
-    answerC: {
+    answerc: {
         type: String,
         required: true
     },
-    answerD: {
+    answerd: {
         type: String,
         required: true
     },
@@ -41,8 +45,19 @@ const QuestionsSchema = new Schema({
 });
 
 
-// Create the model using mongoose's model method
-const Questions = mongoose.model("Questions", QuestionsSchema)
+//=====================================================================================================================
+// Call the mongoose.model() method.  The method makes a copy of the schema and compiles a model from it.
+// It takes 2 arguments:
+//  - the first argument is the model name (which is the singular name of the mongoDB collection you want to access);
+//    mongoose automatically looks for the plural, lowercased version of the model name
+//  - the second argument is the name of the schema that will be copied
+//=====================================================================================================================
 
-// Export the model
-module.exports = Questions;
+const Question = mongoose.model("Question", QuestionSchema)
+
+
+//=====================================================================================================================
+// Make the model available for export.
+//=====================================================================================================================
+
+module.exports = Question;

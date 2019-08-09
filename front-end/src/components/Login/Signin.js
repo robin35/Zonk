@@ -1,3 +1,7 @@
+//==================================================================================================================================
+// Dependencies
+//==================================================================================================================================
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -28,9 +32,9 @@ const Login = () => {
 
     // This is the body of the form  
     return (
-
-        <form onSubmit={event => onSubmit(event)}>
-            <div className="sign-in-container">
+      <div className="container" id="container">
+        <div className="sign-up-container">
+          <form onSubmit={event => onSubmit(event)}>
                 <h1>Sign In</h1>
 
                 <input 
@@ -50,17 +54,18 @@ const Login = () => {
                     minLength='6'
                     required />
 
-                {/* <a href="#">Forgot your password?</a> */}
+                <input 
+                    type='submit' 
+                    className='btn btn-primary' 
+                    value='Sign In' />  
 
-                <div className='buttons'>
-                    <Link to='/join'>
-                        <button className="btn btn-primary" id="signUp">Sign In</button>
-                    </Link>
-                </div>
+          </form>
+          <p>
+              Don't have an account? <Link to='/signup'>Sign Up</Link>
+          </p>
 
-
-            </div>
-        </form>
+        </div>
+      </div>
     );
 };
     

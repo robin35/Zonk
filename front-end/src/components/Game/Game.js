@@ -1,12 +1,12 @@
 import React from 'react';
 
-const PlayGame = () => {
+const Game = () => {
     return (
         <div>
-            <h1>Play Game</h1>
+            <h1>PlayGame</h1>
 
         </div>
         )
     };
     
-    export default PlayGame;
+    export default Game;

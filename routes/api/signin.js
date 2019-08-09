@@ -1,17 +1,30 @@
+//=====================================================================================================================
+// Dependencies
+//=====================================================================================================================
+
+const User = require('../../models/User');
+
 const express = require('express');
-const router = express.Router();
+
 const auth = require('../../middleware/auth');
 const bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 const config = require('config');
 const {check, validationResult} = require ('express-validator');
 
-const User = require('../../models/User');
 
+
+
+const router = express.Router();
+
+//=====================================================================================================================
 //this is basically a test route
 // @route   GET api/auth
 // @desc    Test route
 // @access  Public
+//=====================================================================================================================
+
+router.get('/', (req, res) => res.send('Game route'));
 
 router.get('/', auth, async (req, res) => {
     try {
@@ -80,5 +93,8 @@ router.post(
 });
 
 
+//=====================================================================================================================
+// Export router to use in server.js
+//=====================================================================================================================
 
 module.exports = router;

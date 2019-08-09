@@ -1,3 +1,7 @@
+//==================================================================================================================================
+// Dependencies
+//==================================================================================================================================
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -5,7 +9,7 @@ import axios from 'axios';
 // import '../Landing/Landing.css';
 
 
-const Join = () => {
+const Signup = () => {
 
     // Sets the inital value of the form fields to blank using the React Hook "useState"
     // The useState hook lets you use state and other React features without writing a class.
@@ -45,56 +49,60 @@ const Join = () => {
             // Takes the data populated into the neUser object and stringify's it to json
             // Posts the data to mongoDB Atlas using the server side route
             const body = JSON.stringify(newUser);
-            const res = await axios.post('/api/userregister', body, config);
+            const res = await axios.post('/api/signup', body, config);
             console.log(res.data);
 
         } catch(err) {
-            console.error(err.response.data);
+            console.error(err.res.data);
         }
     };
 
     // This is the body of the form
     return (
         <div className="container" id="container">
-        <div className="sign-up-container">
-        <form onSubmit={event => onSubmit(event)}>
-                <h1>Create Account</h1>
-                <input 
-                    type="text" 
-                    placeholder="Name" 
-                    name="name" 
-                    value={name} 
-                    onChange={event => onChange(event)}
-                    required />
+            <div className="sign-up-container">
+                <form onSubmit={event => onSubmit(event)}>
+                    <h1>Create Account</h1>
+                    <input 
+                        type="text" 
+                        placeholder="Name" 
+                        name="name" 
+                        value={name} 
+                        onChange={event => onChange(event)}
+                        required />
 
-                <input 
-                    type="email" 
-                    placeholder="Email Address" 
-                    name="email" 
-                    value={email} 
-                    onChange={event => onChange(event)}
-                    required />
+                    <input 
+                        type="email" 
+                        placeholder="Email Address" 
+                        name="email" 
+                        value={email} 
+                        onChange={event => onChange(event)}
+                        required />
 
-                <input 
-                    type="password" 
-                    placeholder="Password" 
-                    name='password' 
-                    value={password} 
-                    onChange={event => onChange(event)}
-                    minLength='6'
-                    required />
-               
-                <div className='buttons'>
-                    <Link to='/join'>
-                        <button className="btn btn-primary" id="signUp">Sign Up</button>
-                    </Link>
-                </div>
+                    <input 
+                        type="password" 
+                        placeholder="Password" 
+                        name='password' 
+                        value={password} 
+                        onChange={event => onChange(event)}
+                        minLength='6'
+                        required />
+                    
+                    <input 
+                      type='submit' 
+                      className='btn btn-primary' 
+                      value='Sign Up' />                
 
                 </form>
+
+                <p>
+                  Already have an account? <Link to='/signin'>Sign In</Link>
+                </p>
+
             </div>
-            </div>
+        </div>
 
     )
 };
     
-export default Join;
+export default Signup;

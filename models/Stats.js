@@ -1,24 +1,24 @@
+//=====================================================================================================================
+// Dependencies
+//=====================================================================================================================
+
 const mongoose = require('mongoose');
 
-// Save a reference to the Schema constructor
+
+//=====================================================================================================================
+// Create a new object from the mongoose Schema constructor object.  
+// This creates the mongoDB document.
+//=====================================================================================================================
+
 var Schema = mongoose.Schema;
 
-// Create a new object from the Schema constructor
-const StatsSchema = new Schema({
+const StatSchema = new Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user'
     },
-    bestScore: {
+    Score: {
         type: Number,
-    },
-    currentScore: {
-        type: Number,
-        required: true
-    },
-    level: {
-        type: Number,
-        required: true
     },
     date: {
         type: Date,
@@ -26,8 +26,20 @@ const StatsSchema = new Schema({
     }
 });
 
-// Create the model using mongoose's model method
-const Stats = mongoose.model("Stats", StatsSchema)
 
-// Export the model
-module.exports = Stats;
+//=====================================================================================================================
+// Call the mongoose.model() method.  The method makes a copy of the schema and compiles a model from it.
+// It takes 2 arguments:
+//  - the first argument is the model name (which is the singular name of the mongoDB collection you want to access);
+//    mongoose automatically looks for the plural, lowercased version of the model name
+//  - the second argument is the name of the schema that will be copied
+//=====================================================================================================================
+
+const Stat = mongoose.model("Stat", StatSchema)
+
+
+//=====================================================================================================================
+// Make the model available for export.
+//=====================================================================================================================
+
+module.exports = Stat;

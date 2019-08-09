@@ -13,7 +13,7 @@ const Landing = () => {
                     <p>To keep connected with us please login!</p>
 
                     <div className='buttons'>
-                        <Link to='/login'>
+                        <Link to='/signin'>
                             <button>Sign In</button>
                         </Link>
                     </div>
@@ -28,7 +28,7 @@ const Landing = () => {
                         <p>Enter your details and get started!</p>
 
                         <div className='buttons'>
-                            <Link to='/join'>
+                            <Link to='/signup'>
                                 <button className="ghost" id="signUp">Sign Up</button>
                             </Link>
                         </div>

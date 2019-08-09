@@ -1,48 +1,43 @@
 //=======================================================================================================================
-// Require Dependencies
+// Dependencies
 //=======================================================================================================================
 const express = require('express');
-const connectDB = require('./config/db');
-
-
+const connectDB = require('./config/database');
 
 
 //=======================================================================================================================
-// Set up Express and MongoDB
+// Call Express, assign Port, and connect to MongoDB
 //=======================================================================================================================
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Connect Database
 connectDB();
 
 
-// Init Body Parser Middleware
+//=======================================================================================================================
+// Init Body Parser Middleware.  It gets the data from req.body.
+//=======================================================================================================================
+
 app.use(express.json({ extended: false}));
 
+
 //=======================================================================================================================
-// Set up Routes
+// The app.use() function is used to call the routes from the various routes/api files 
 //=======================================================================================================================
 app.get('/', (req,res) => res.send('API Running'));
 
-app.use('/api/addquestion', require('./routes/api/addquestion'));
-app.use('/api/gameboard', require('./routes/api/gameboard'));
+app.use('/api/questions', require('./routes/api/questions'));
+app.use('/api/game', require('./routes/api/game'));
 app.use('/api/home', require('./routes/api/home'));
 app.use('/api/stats', require('./routes/api/stats'));
-app.use('/api/userauth', require('./routes/api/userauth'));
-app.use('/api/userregister', require('./routes/api/userregister'));
+app.use('/api/signin', require('./routes/api/signin'));
+app.use('/api/signup', require('./routes/api/signup'));
 
 
 //=======================================================================================================================
 // Start Server
 //=======================================================================================================================
 
-// app.listen(PORT, () => {
-//     console.log("Server listening on PORT:" + PORT);
-// });
+app.listen(PORT, () => console.log('Server listening on PORT: ' + PORT));
 
-app.listen(PORT, () => console.log('Server started on port ${PORT}'));
 
-//consider adding this to the package.json file.  there is already a "start" for react in the file so it replaces the below?
-//"start": "node server",
-//"start": "react-scripts start",

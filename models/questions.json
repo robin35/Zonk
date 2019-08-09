@@ -1,0 +1,272 @@
+[
+ {
+   "topic": "Mathmatics",
+   "question": "The perimete of a circle is also known as what?",
+   "answera": "Diameter",
+   "answerb": "Radius",
+   "answerc": "Disc",
+   "answerd": "circumference",
+   "correct": "D"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "65 - 43",
+   "answera": "11",
+   "answerb": "22",
+   "answerc": "33",
+   "answerd": "44",
+   "correct": "B"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What's the square root of 144",
+   "answera": "48",
+   "answerb": "12",
+   "answerc": "144",
+   "answerd": "36",
+   "correct": "B"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What type of number is a -2?",
+   "answera": "A positive number",
+   "answerb": "An imaginary number",
+   "answerc": "A fraction",
+   "answerd": "An integer",
+   "correct": "D"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "7 * 9",
+   "answera": "9",
+   "answerb": "16",
+   "answerc": "63",
+   "answerd": "7",
+   "correct": "C"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "5 to the power of 0 equals what?",
+   "answera": "5",
+   "answerb": "0",
+   "answerc": "10",
+   "answerd": "1",
+   "correct": "D"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What is an angle more than 90 degrees but less than 180 degrees?",
+   "answera": "Acute angle",
+   "answerb": "A right angle",
+   "answerc": "An obtuse angle",
+   "answerd": "A straight angle",
+   "correct": "C"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "A polygon with 8 sides is called?",
+   "answera": "an octogon",
+   "answerb": "quadrilateral",
+   "answerc": "pentagon",
+   "answerd": "triangle",
+   "correct": "A"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What's the top number of a fraction called?",
+   "answera": "Denominator",
+   "answerb": "Domino",
+   "answerc": "Number",
+   "answerd": "Numerator",
+   "correct": "D"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What does 3 squared equal?",
+   "answera": "3",
+   "answerb": "6",
+   "answerc": "9",
+   "answerd": "12",
+   "correct": "C"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What is an isoceles triangle?",
+   "answera": "A triangle with all equal sides",
+   "answerb": "A triange with 2 sides of equal length",
+   "answerc": "A triangle with no equal sides",
+   "answerd": "A right angle",
+   "correct": "B"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "How many sides does a nonagon have?",
+   "answera": "7",
+   "answerb": "8",
+   "answerc": "9",
+   "answerd": "10",
+   "correct": "C"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What is the definition of a prime number?",
+   "answera": "A number equal to1",
+   "answerb": "A fraction",
+   "answerc": "A number only divisible by 1 and itself",
+   "answerd": "The number 0",
+   "correct": "C"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What's 2 + 2?",
+   "answera": "4",
+   "answerb": "6",
+   "answerc": "8",
+   "answerd": "10",
+   "correct": "A"
+ },
+ {
+   "topic": "Mathmatics",
+   "question": "What 2 * 7",
+   "answera": "7",
+   "answerb": "14",
+   "answerc": "9",
+   "answerd": "2",
+   "correct": "B"
+ },
+ {
+   "topic": "Science",
+   "question": "What is the periodic symbol for Silver?",
+   "answera": "N",
+   "answerb": "Sn",
+   "answerc": "O",
+   "answerd": "Ag",
+   "correct": "D"
+ },
+ {
+   "topic": "Science",
+   "question": "What does ATP stand for?",
+   "answera": "Activity Transfer",
+   "answerb": "Adenosine Triphosphate",
+   "answerc": "Ataxia Telangiectasia",
+   "answerd": "American Telephone",
+   "correct": "B"
+ },
+ {
+   "topic": "Science",
+   "question": "What is known as the strongest magnet in the universe?",
+   "answera": "Nicel",
+   "answerb": "Neodymium",
+   "answerc": "A neutron star",
+   "answerd": "The sun",
+   "correct": "C"
+ },
+ {
+   "topic": "Science",
+   "question": "Where does sound travel the fastest?",
+   "answera": "Through ice",
+   "answerb": "Through air",
+   "answerc": "Through sand",
+   "answerd": "Through water",
+   "correct": "D"
+ },
+ {
+   "topic": "Science",
+   "question": "If you go into space, do you shrink, grow taller, gain weight, lose weight?",
+   "answera": "Shrink",
+   "answerb": "Grow taller",
+   "answerc": "Gain weight",
+   "answerd": "Lose weight",
+   "correct": "B"
+ },
+ {
+   "topic": "Science",
+   "question": "What causes an aurora?",
+   "answera": "Rainfall over a mountain",
+   "answerb": "Particle trajectories through water",
+   "answerc": "Lightening",
+   "answerd": "Particles changing direction in respone to solar winds",
+   "correct": "D"
+ },
+ {
+   "topic": "Science",
+   "question": "About how old is the sun?",
+   "answera": "About 5 billion years (we think!)",
+   "answerb": "2000 years",
+   "answerc": "1 million years",
+   "answerd": "100 zillion years",
+   "correct": "A"
+ },
+ {
+   "topic": "Science",
+   "question": "What can cause a tsunami?",
+   "answera": "A hurricane",
+   "answerb": "A tornado",
+   "answerc": "Strong winds",
+   "answerd": "an earthquake, volcanic eruption or underwater landslide",
+   "correct": "D"
+ },
+ {
+   "topic": "Science",
+   "question": "What is the unit Scoville heat used for?",
+   "answera": "Measuring the spice of chiles",
+   "answerb": "Measuring the heat of the sun",
+   "answerc": "Measuring the of moon",
+   "answerd": "Measuring the heat of an onion",
+   "correct": "A"
+ },
+ {
+   "topic": "Science",
+   "question": "What is the biggest volcano in the world?",
+   "answera": "Pompeii, Italy",
+   "answerb": "Mauna Loa, Hawaii",
+   "answerc": "Mount Everest",
+   "answerd": "Mount Mayon, Philippines",
+   "correct": "B"
+ },
+ {
+   "topic": "Science",
+   "question": "If your body cannot properly produce insulin, what disease would you have?",
+   "answera": "Liver disease",
+   "answerb": "Heart disease",
+   "answerc": "Kidney failure",
+   "answerd": "Type I Diabetes",
+   "correct": "D"
+ },
+ {
+   "topic": "Science",
+   "question": "Where are the smallest bones in your body?",
+   "answera": "In your ears",
+   "answerb": "In your fingers",
+   "answerc": "In your toes",
+   "answerd": "In your nose",
+   "correct": "A"
+ },
+ {
+   "topic": "Science",
+   "question": "What is the periodic symbol for Potassium?",
+   "answera": "Pa",
+   "answerb": "ALS",
+   "answerc": "Cn",
+   "answerd": "K (also the most annoying response to a text)",
+   "correct": "D"
+ },
+ {
+   "topic": "Science",
+   "question": "What is tachycardia?",
+   "answera": "Another name for the heart",
+   "answerb": "A consistent heartbeat above 100 bpm",
+   "answerc": "Having no heartbeat",
+   "answerd": "Having a heartbeat below 30 bpm",
+   "correct": "B"
+ },
+ {
+   "topic": "Science",
+   "question": "Which organ is responsible for filtering blood?",
+   "answera": "Kidney",
+   "answerb": "Lungs",
+   "answerc": "Liver",
+   "answerd": "Heart",
+   "correct": "C"
+ }
+]
