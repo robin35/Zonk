@@ -3,6 +3,7 @@ import { Container, Row, Col } from "../components/Grid";
 import { TotalPoints, PointBoard } from "../pages/Points";
 import { RandomNumber, Zonk } from "./Math";
 import Egg from "../images/egg.jpg";
+import QuizQuiz from "../components/quiz2";
 // import PointBoard from "./StarWars";
 // import { TotalPoints } from "./Points";
 // import NavTabs from "./components/NavTabs/index";

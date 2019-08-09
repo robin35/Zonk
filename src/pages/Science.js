@@ -9,7 +9,34 @@ import Science from "../images/science.png";
 
 
 // points board will have 25 options
-function SoccerTrivia () {
+export default class SoccerTrivia extends React.Component {
+    state = {
+        point: 0
+      };
+      totalPoints = () => {
+          let points;
+          if("getpoints"  === RandomNumber) {
+             points = points + RandomNumber;
+          } else if ("getpoints" === Zonk){
+              points = 0;
+          } else {
+              points = 0;
+          }
+      
+          return (
+              <div className="points">
+                  <h3>{this.state.point}</h3>
+              </div>
+              ) 
+        };
+  
+        handleIncrement = (num) => {
+            console.log("working");
+          // We always use the setState method to update a component's state
+          this.setState({ point: num === "Zonk" ? 0 : (this.state.point + num) });
+        };
+  
+        render() {
     return (
         
 
@@ -17,7 +44,7 @@ function SoccerTrivia () {
             <Row>
         
              <div className="score align-right">
-                Total Points <TotalPoints/>
+                Total Points {this.totalPoints()}
             </div>
         </Row>
         <Row>
@@ -28,118 +55,128 @@ function SoccerTrivia () {
         <div className="table">
             <table>
                 <tr>
-                    <th>
-                        <div className="hide-on-click">
-                            <button className="getpoints"><img src={Science} alt="science" width="75" height="75"/></button>
-                       <RandomNumber/>
-                       </div>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
+                <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                    
                 </tr>
                 <tr>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
+                <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                   
                 </tr>
                 <tr>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
+                <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                        <th>
+                                <button className="getpoints" onClick={this.handleIncrement} ></button>
+                           <RandomNumber handleIncrement={this.handleIncrement}>
+                                <img src={Science} alt="science" width="75" height="75"/>
+                            </RandomNumber>
+                           
+                        </th>
+                    
                 </tr>
-                <tr>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                    <th>
-                    <button className="getpoints"><img src={Science}  alt="science" width="75" height="75"/></button>
-                        <RandomNumber/>
-                    </th>
-                </tr>
+               
             </table>
         </div>
             </Col>
         </Row>
     </Container>
     );
+  }
 }
 
-export default SoccerTrivia;
+
 
