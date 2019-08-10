@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
     console.log(req.body)
 
     try {
-        const questions = await Question.find({ searchTopic });
+        const questions = await Question.find({ searchTopic});
         res.json(questions);
 
     } catch(err) {
