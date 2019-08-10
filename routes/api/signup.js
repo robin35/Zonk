@@ -30,7 +30,8 @@ router.post(
     [
         check('name', 'Name is required').not().isEmpty(),
         check('email', 'Please include a valid email').isEmail(),
-        check('password', 'Please enter a password with 6 or more characters').isLength({ min: 6})
+        check('password', 'Please enter a password with 6 or more characters').isLength({ min: 6}),
+        check('admin', 'Admin is required').not().isEmpty(),
     ],
     async (req, res) => {
     const errors = validationResult(req);
@@ -39,7 +40,7 @@ router.post(
     }
 
     // pass names from req body to object
-    const { name, email, password } = req.body;
+    const { name, email, password, admin } = req.body;
 
     try {
         // See if user exists
@@ -52,7 +53,8 @@ router.post(
         user = new User({ 
             name,
             email,
-            password
+            password,
+            admin
         })
 
         // Encrypt password.  Create the "salt"

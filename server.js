@@ -26,12 +26,14 @@ app.use(express.json({ extended: false}));
 //=======================================================================================================================
 app.get('/', (req,res) => res.send('API Running'));
 
-app.use('/api/questions', require('./routes/api/questions'));
+
 app.use('/api/game', require('./routes/api/game'));
 app.use('/api/home', require('./routes/api/home'));
 app.use('/api/stats', require('./routes/api/stats'));
 app.use('/api/signin', require('./routes/api/signin'));
 app.use('/api/signup', require('./routes/api/signup'));
+app.use('/api/questions', require('./routes/api/questions'));
+app.use('/api/searchquestions', require('./routes/api/searchquestions'));
 
 
 //=======================================================================================================================

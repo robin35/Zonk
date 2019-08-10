@@ -1,21 +1,27 @@
 //=====================================================================================================================
 // Dependencies
 //=====================================================================================================================
+const Question = require('../../models/Question');
+const User = require('../../models/User');
 
-const Question = require('../../models/Questions');
-
+const auth = require('../../middleware/auth');
 const express = require('express');
 const {check, validationResult} = require ('express-validator');
 
+
+//=====================================================================================================================
+// Used to separate routes from the server.js file
+//=====================================================================================================================
 const router = express.Router();
 
 
-//router.get('/', (req, res) => res.send('AddQuestion route'));
-
-// @route   POST api/addquestion
-// @desc    Post new questions to database
+//=====================================================================================================================
+// @route   POST api/questions
+// @desc    Posts new questions to database
 // @access  Public
+//=====================================================================================================================
 
+// verify input
 router.post(
     '/', 
     [
@@ -62,6 +68,52 @@ router.post(
         res.status(500).send('Server error');
     }
 });
+
+
+//=====================================================================================================================
+// @route   GET api/questions
+// @desc    Get questions
+// @access  Private
+// Use async / await because we are using mongoose
+//=====================================================================================================================
+
+router.get('/', auth, async (req, res) => {
+    try {
+        const userdata = await User.findOne({ user: req.user.id }).populate('user', 'name');
+
+        if(!userdata) {
+            return res.status(400).json({ msg: 'Invalid user' });
+        }
+
+        res.json(userdata);
+
+    } catch(err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+});
+
+
+//=====================================================================================================================
+// @route   GET api/questions
+// @desc    Get all questions
+// @access  Private
+//=====================================================================================================================
+
+router.get('/', async (req, res) => {
+
+    try {
+        const questions = await Question.find().populate('user', 'name');
+        res.json(questions);
+
+    } catch(err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+});
+
+
+
 
 
 //=====================================================================================================================

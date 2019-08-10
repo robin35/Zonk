@@ -54,10 +54,14 @@ const Login = () => {
                     minLength='6'
                     required />
 
-                <input 
+                {/* <input 
                     type='submit' 
                     className='btn btn-primary' 
-                    value='Sign In' />  
+                    value='Sign In' />   */}
+
+                <div className='buttons'>
+                    <button>Sign In</button>
+                </div>
 
           </form>
           <p>

@@ -12,17 +12,39 @@ const mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-const StatSchema = new Schema({
-    user: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'user'
+const QuestionSchema = new Schema({
+    // user: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'user'
+    // },
+    topic: {
+        type: String,
+        required: true
     },
-    Score: {
-        type: Number,
+    question: {
+        type: String,
+        required: true,
+        unique: true
     },
-    date: {
-        type: Date,
-        default: Date.now
+    answera: {
+        type: String,
+        required: true
+    },
+    answerb: {
+        type: String,
+        required: true
+    },
+    answerc: {
+        type: String,
+        required: true
+    },
+    answerd: {
+        type: String,
+        required: true
+    },
+    correct: {
+        type: String,
+        required: true
     }
 });
 
@@ -35,11 +57,11 @@ const StatSchema = new Schema({
 //  - the second argument is the name of the schema that will be copied
 //=====================================================================================================================
 
-const Stat = mongoose.model("Stat", StatSchema)
+const Question = mongoose.model("Question", QuestionSchema)
 
 
 //=====================================================================================================================
 // Make the model available for export.
 //=====================================================================================================================
 
-module.exports = Stat;
+module.exports = Question;

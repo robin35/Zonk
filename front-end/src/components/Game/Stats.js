@@ -10,23 +10,26 @@ import { Link } from 'react-router-dom';
 // 
 //==================================================================================================================================
 
-const Game = () => {
+const Stat = () => {
     return (
 
         // <div class="card" style="width: 18rem;">
-        <div>
-            <img src="../../../public/images/Animated Gif Fantasy (14).gif" class="card-img-top" alt="..." />
+        <div className="container" id="container">
+            
+            <img src="https://media.giphy.com/media/hA66say0FkVry/giphy.gif" alt="Dino" width="275" height="275"></img>
 
-            <div class="card-body">
-                <h5 class="card-title">Your Stats!</h5>
+            <div className="card-body">
+                <h5 className="card-title">Your Stats!</h5>
 
-                <p class="card-text">Your best game streak </p>
-                <p class="card-text">Your current score </p>
-                <p class="card-text">You're at this level! </p>
+                <p className="card-text">Your best game streak </p>
+                <p className="card-text">Your current score </p>
+                               
+                <div className='buttons'>
+                        <Link to='/game'>
+                            <button>Start Game</button>
+                        </Link>
+                </div>
 
-                <p className='my-1'>
-                    Want to continue your last game? <Link to='/game'>Start Game</Link>
-                </p>
 
             </div>
         </div>
@@ -35,7 +38,7 @@ const Game = () => {
         )
     };
     
-export default Game;
+export default Stat;
 
 
 

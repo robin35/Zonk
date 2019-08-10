@@ -1,0 +1,15 @@
+
+
+.questionContainer {
+    width: 100%;
+    height: 100%;
+
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+
+    background-color: black;
+
+    overflow: auto;
+    display: inline-block;
+}

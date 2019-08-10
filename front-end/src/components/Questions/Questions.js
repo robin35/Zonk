@@ -4,7 +4,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import './question.css';
+// import './question.css';
 
 
 
@@ -67,68 +67,79 @@ const Questions = () => {
     // The body of the form starts here
     return (
 
-        <form className="ui container form" onSubmit={event => onSubmit(event)}>
+        <form className="ui container form inline" onSubmit={event => onSubmit(event)}>
 
-            <div className="field">
-                <div>Enter Topic and Question text here:</div>
+            <div>
+                <h1>Enter New Question</h1>
 
-                <label>Topic:</label>
-                <input 
-                    type="text" 
-                    name="topic" 
-                    placeholder="Topic" 
-                    value={topic} 
-                    onChange={event => onChange(event)}
-                    required />
+                <div className="inline fields eight wide field">
+                    <label>Topic:</label>
+                    <input 
+                        type="text" 
+                        name="topic" 
+                        placeholder="Topic" 
+                        value={topic} 
+                        onChange={event => onChange(event)}
+                        required />
+                </div>
 
-                <label>Question:</label>
-                <input 
-                    type="text" 
-                    name="question" 
-                    placeholder="Question Text" 
-                    value={question} 
-                    onChange={event => onChange(event)}
-                    required />
+                <div className="inline fields">
+                    <label>Question:</label>
+                    <input 
+                        type="text" 
+                        name="question" 
+                        placeholder="Question Text" 
+                        value={question} 
+                        onChange={event => onChange(event)}
+                        required />
+                </div>
 
-                <div>Enter answer choices below:</div>
+                <div className="inline fields">
+                    <label>ChoiceA:</label>
+                    <input 
+                        type="text" 
+                        name="answera" 
+                        placeholder="Enter answer A" 
+                        value={answera} 
+                        onChange={event => onChange(event)}
+                        required />
+                </div>
 
-                <label>Answer Choice A:</label>
-                <input 
-                    type="text" 
-                    name="answera" 
-                    placeholder="Enter answer A" 
-                    value={answera} 
-                    onChange={event => onChange(event)}
-                    required />
+                <div className="inline fields">
+                    <label>ChoiceB:</label>
+                    <input 
+                        type="text" 
+                        name="answerb" 
+                        placeholder="Enter answer B" 
+                        value={answerb} 
+                        onChange={event => onChange(event)}
+                        required />
+                </div>
 
-                <label>Answer Choice B:</label>
-                <input 
-                    type="text" 
-                    name="answerb" 
-                    placeholder="Enter answer B" 
-                    value={answerb} 
-                    onChange={event => onChange(event)}
-                    required />
+                <div className="inline fields">
+                    <label>ChoiceC:</label>
+                    <input 
+                        type="text" 
+                        name="answerc" 
+                        placeholder="Enter answer C" 
+                        value={answerc} 
+                        onChange={event => onChange(event)}
+                        required />
+                </div>
 
-                <label>Answer Choice C:</label>
-                <input 
-                    type="text" 
-                    name="answerc" 
-                    placeholder="Enter answer C" 
-                    value={answerc} 
-                    onChange={event => onChange(event)}
-                    required />
+                <div className="inline fields">
+                    <label>ChoiceD:</label>
+                    <input 
+                        type="text" 
+                        name="answerd" 
+                        placeholder="Enter answer D" 
+                        value={answerd} 
+                        onChange={event => onChange(event)}
+                        required />
+                </div>
 
-                <label>Answer Choice D:</label>
-                <input 
-                    type="text" 
-                    name="answerd" 
-                    placeholder="Enter answer D" 
-                    value={answerd} 
-                    onChange={event => onChange(event)}
-                    required />
-
-                <div>Enter correct answer below:</div>
+                <div className="inline fields eight wide field">
+                <label>Correct Choice (Letter):</label>
                 <input 
                     type="text" 
                     name="correct" 
@@ -136,12 +147,20 @@ const Questions = () => {
                     value={correct} 
                     onChange={event => onChange(event)}
                     required />
+                </div>
+
             </div>
-           
-            <input 
+
+            {/* <input 
                 type='submit' 
                 className='btn btn-primary' 
-                value='Add this Question' />  
+                value='Add this Question' />   */}
+
+                <div className='buttons'>
+                    <button>Add this Question</button>
+                </div>
+
+
 
         </form>
     );

@@ -12,9 +12,6 @@ const jwt = require("jsonwebtoken");
 const config = require('config');
 const {check, validationResult} = require ('express-validator');
 
-
-
-
 const router = express.Router();
 
 //=====================================================================================================================
@@ -23,8 +20,6 @@ const router = express.Router();
 // @desc    Test route
 // @access  Public
 //=====================================================================================================================
-
-router.get('/', (req, res) => res.send('Game route'));
 
 router.get('/', auth, async (req, res) => {
     try {
@@ -38,8 +33,6 @@ router.get('/', auth, async (req, res) => {
 });
 
 
-
-//this is basically a test route
 // @route   POST api/auth
 // @desc    Authenticate user and get token
 // @access  Public

@@ -88,10 +88,14 @@ const Signup = () => {
                         minLength='6'
                         required />
                     
-                    <input 
+                    {/* <input 
                       type='submit' 
                       className='btn btn-primary' 
-                      value='Sign Up' />                
+                      value='Sign Up' />    */}
+
+                    <div className='buttons'>
+                        <button>Sign Up</button>
+                    </div>             
 
                 </form>
 
