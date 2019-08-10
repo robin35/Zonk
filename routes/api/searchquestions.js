@@ -20,15 +20,14 @@ const router = express.Router();
 // @access  Private
 //=====================================================================================================================
 
-router.get('/', async (req, res) => {
+router.get('/:searchTopic', async (req, res) => {
 
-    // pass names from req body to object
-    const { searchTopic } = req.body;
+    let searchTopic = req.params.searchTopic
 
-    console.log(req.body)
+    console.log(searchTopic)
 
     try {
-        const questions = await Question.find({ searchTopic});
+        const questions = await Question.find({ topic: searchTopic });
         res.json(questions);
 
     } catch(err) {

@@ -26,30 +26,15 @@ const Search = () => {
 
     // React does not detect when a user types in a form.  
     // onChange is an event handler that captures the changes as they happen.
-    const onChange = event => setFormData({[event.target.name]: event.target.value });
+    const onChange = event => setFormData({ searchTopic: event.target.value });
 
     // Populates the newSearch object with the form data
     const onSubmit = async event => {
         event.preventDefault();
         console.log(formData);
-        
-        const newSearch = {
-            searchTopic
-        }
-
 
         try {
-            // configures the header that will accompany the json body below
-            const config = {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            }
-
-            // Takes the data populated into the object and stringify's it to json
-            // Posts the data to mongoDB Atlas using the server side route
-            const body = JSON.stringify(newSearch);
-            const res = await axios.get('/api/searchquestions', body, config);
+            const res = await axios.get(`/api/searchquestions/${searchTopic}`);
             
             console.log(res.data);
 
