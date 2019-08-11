@@ -2,9 +2,6 @@
 // Dependencies
 //=====================================================================================================================
 const Question = require('../../models/Question');
-// const User = require('../../models/User');
-
-// const auth = require('../../middleware/auth');
 const express = require('express');
 
 
@@ -16,7 +13,7 @@ const router = express.Router();
 
 //=====================================================================================================================
 // @route   GET api/questions
-// @desc    Get all questions
+// @desc    Get questions by topic
 // @access  Private
 //=====================================================================================================================
 
@@ -35,11 +32,6 @@ router.get('/:searchTopic', async (req, res) => {
         res.status(500).send('Server Error');
     }
 });
-
-
-
-
-
 
 
 //=====================================================================================================================

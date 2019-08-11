@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Game = () => {
+const GameBoard = () => {
     return (
         <div>
-            <h1>PlayGame</h1>
+            <h1>Quiz</h1>
 
         </div>
         )
     };
     
-    export default Game;
+    export default GameBoard;

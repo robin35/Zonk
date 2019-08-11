@@ -10,7 +10,8 @@ const Navbar = props => {
                                 
                 <div className='navbar-nav'>
                     <Link to='/' className='nav-item nav-link'>Home</Link>
-                    <Link to='/stats' className='nav-item nav-link'>Play Game</Link>
+                    <Link to='/game' className='nav-item nav-link'>Play Game</Link>
+                    <Link to='/stats' className='nav-item nav-link'>View Stats</Link>
                     <Link to='/questions' className='nav-item nav-link'>Create Questions</Link>
                     <Link to='/searchquestions' className='nav-item nav-link'>Search Questions</Link>
 

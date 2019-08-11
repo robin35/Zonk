@@ -25,12 +25,10 @@ const Stat = () => {
                 <p className="card-text">Your current score </p>
                                
                 <div className='buttons'>
-                        <Link to='/game'>
-                            <button>Start Game</button>
+                        <Link to='/home'>
+                            <button>Exit</button>
                         </Link>
                 </div>
-
-
             </div>
         </div>
 
