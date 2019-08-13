@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Countdown extends React.Component {
+export default class CountDown extends React.Component {
     constructor(props) {
         super(props);
         this.decrementTimer = this.decrementTimer.bind(this);

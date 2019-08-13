@@ -5,29 +5,29 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Navbar from './components/Landing/Navbar';
-import Landing from './components/Landing/Landing';
-import Signup from './components/Login/Signup';
-import Signin from './components/Login/Signin';
+import Navbar from './components/landing/Navbar';
+import Landing from './components/landing/Landing';
+import Signup from './components/login/Signup';
+import Signin from './components/login/Signin';
 
-import SearchQuestions from './components/Questions/SearchQuestions';
-import Questions from './components/Questions/Questions';
+import SearchQuestions from './components/questions/SearchQuestions';
+import QuestionDisplay from './components/questions/QuestionDisplay';
 
-import Stats from './components/Game/Stats';
-import NewGame from './components/Game/NewGame';
-import GameBoard from './components/Game/GameBoard';
+import Stats from './components/game/Stats';
+import NewGame from './components/game/NewGame';
+import GameBoard from './components/game/GameBoard';
 
-import MathTrivia from './components/GameBoard/MathTrivia';
-import Science from './components/GameBoard/Science';
-import SocialStudies from './components/GameBoard/SocialStudies';
+import MathTrivia from './components/gameboard/MathTrivia';
+import Science from './components/gameboard/Science';
+import SocialStudies from './components/gameboard/SocialStudies';
 
-import Baseball from './components/GameBoard/Baseball';
-import Soccer from './components/GameBoard/Soccer';
-import Basketball from './components/GameBoard/Basketball';
+import Baseball from './components/gameboard/Baseball';
+import Soccer from './components/gameboard/Soccer';
+import Basketball from './components/gameboard/Basketball';
 
-import Jurassic from './components/GameBoard/Jurassic';
-import Music from './components/GameBoard/Music';
-import StarWars from './components/GameBoard/StarWars';
+import Jurassic from './components/gameboard/Jurassic';
+import Music from './components/gameboard/Music';
+import StarWars from './components/gameboard/StarWars';
 
 
 //==================================================================================================================================
@@ -51,7 +51,7 @@ const App = () => {
             <Route exact path= '/signup' component={Signup} />
 
             <Route exact path= '/searchquestions' component={SearchQuestions} />
-            <Route exact path= '/questions' component={Questions} />
+            <Route exact path= '/questions' component={QuestionDisplay} />
 
             <Route exact path= '/stats' component={Stats} />
             <Route exact path= '/game' component={NewGame} />

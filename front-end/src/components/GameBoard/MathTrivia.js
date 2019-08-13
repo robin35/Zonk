@@ -1,8 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "../Grid";
+import { Container, Row, Col } from "../grid/Grid";
 import { TotalPoints, PointBoard } from "../pages/Points";
 import { RandomNumber, Zonk } from "./Math";
 import MathTri from "../images/math.png";
+
+import NewGame from '../game/NewGame';
 // import NavTabs from "./components/NavTabs/index";
 
 
@@ -47,6 +49,11 @@ export default class MathTrivia extends React.Component {
                     <div className="score align-right">
                         Total Points {this.totalPoints()}
                     </div>
+
+                    <NewGame />
+
+
+                    
                 </Row>
 
                 <Row>

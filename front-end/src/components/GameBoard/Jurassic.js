@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "../Grid";
+import { Container, Row, Col } from "../grid/Grid";
 import { TotalPoints, PointBoard } from "../pages/Points";
 import { RandomNumber, Zonk } from "./Math";
 import Egg from "../images/egg.jpg";

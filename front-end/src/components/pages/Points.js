@@ -1,6 +1,6 @@
 import React from "react";
-import { RandomNumber, Zonk } from "../GameBoard/Math"
-import { Container, Row, Col } from "../Grid";
+import { RandomNumber, Zonk } from "../gameboard/Math";
+import { Container, Row, Col } from "../grid/Grid";
 import Yoda from "../images/yoda.jpg";
 import Empire from "../images/empire.jpg";
 import Rebelion from "../images/rebelion.png";

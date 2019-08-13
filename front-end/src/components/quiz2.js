@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Countdown from "../components/countdown/countdown";
+import CountDown from "./countdown/CountDown";
 
 class QuizQuiz extends React.Component {
     constructor(props) {
@@ -90,7 +90,7 @@ class QuizQuiz extends React.Component {
 
                         { hasUserAnswered || !hasQuizStarted ? 
                             (<div className="hide"></div>) :
-                            (<Countdown currentQuestion={ currentQuestion }
+                            (<CountDown currentQuestion={ currentQuestion }
                                 amountofQuestions= {questionsWithShuffledAnswers.length }
                                 checkCorrtness= {this.checkCorrectness} />)}
                     </main>
@@ -172,13 +172,7 @@ class QuizQuiz extends React.Component {
         });
     }
 
-    displayCorrectAnswer(correctAnswer){
-        this.setState({
-            hasUserAnswered: true,
-            correctAnswer: correctAnswer
-        });
-    }
-    
+  
     advanceQuiz(index, currentQuestion) {
         this.setState({
             currentQuestion: (currentQuestion + 1),
