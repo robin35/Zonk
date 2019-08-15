@@ -6,7 +6,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // import Navbar from './components/landing/Navbar';
-import Welcome from './components/landing/Welcome';
+// import Welcome from './components/landing/Welcome';
 import Landing from './components/landing/Landing';
 import Signup from './components/login/Signup';
 import Signin from './components/login/Signin';
@@ -43,7 +43,7 @@ const App = () => {
         <Fragment>
           {/* <Navbar /> */}
 
-          <Route exact path='/' component={Welcome} />
+          {/* <Route exact path='/' component={Welcome} /> */}
 
           <Switch>
 
