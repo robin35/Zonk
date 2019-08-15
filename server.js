@@ -3,6 +3,7 @@
 //=======================================================================================================================
 const express = require('express');
 const connectDB = require('./config/database');
+const path = require('path');
 
 
 //=======================================================================================================================
@@ -24,7 +25,7 @@ app.use(express.json({ extended: false}));
 //=======================================================================================================================
 // The app.use() function is used to call the routes from the various routes/api files 
 //=======================================================================================================================
-app.get('/', (req,res) => res.send('API Running'));
+// app.get('/', (req,res) => res.send('API Running'));
 
 
 app.use('/api/newgame', require('./routes/api/newgame'));
@@ -35,6 +36,17 @@ app.use('/api/signup', require('./routes/api/signup'));
 app.use('/api/questions', require('./routes/api/questions'));
 app.use('/api/searchquestions', require('./routes/api/searchquestions'));
 
+
+// Server static assets in production
+if(process.env.NODE_ENV === 'production') {
+    //set static folder
+    app.use(express.static('front-end/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'front-end', 'build', 'index.html'));
+    });
+
+}
 
 //=======================================================================================================================
 // Start Server

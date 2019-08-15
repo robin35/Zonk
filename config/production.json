@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://terra:1910@zonkcluster-nje2i.gcp.mongodb.net/zonkDB?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
+}
