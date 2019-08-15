@@ -1,18 +1,62 @@
+//=================================================================================
+// Dependencies
+//=================================================================================
+
 import React from "react";
 import { Container, Row, Col } from "../grid/Grid";
 import { TotalPoints, PointBoard } from "../pages/Points";
 import { RandomNumber, Zonk } from "./Math";
 import Baseball from "../../images/baseball.jpg";
-// import NavTabs from "./components/NavTabs/index";
+import axios from 'axios';
+
+import { Table, Grid, Icon, Menu } from 'semantic-ui-react';
+import '../landing/Landing.css';
 
 
-
+//=================================================================================
+// Configure Game
+//=================================================================================
 
 // points board will have 25 options
 export default class BaseballTrivia extends React.Component {
     state = {
-        point: 0
+        point: 0,
+        Baseball: 'Baseball',
+        questions: []
     };
+
+
+        //=================================================================================
+    // Questions
+    //=================================================================================
+      
+    componentDidMount() {
+        this.getQuestions();
+    }
+
+      getQuestions = async event => {
+          // event.preventDefault();
+      
+          try {
+            const res = await axios.get(`/api/searchquestions/${this.state.Baseball}`);
+            console.log(res.data);
+            const questions = res.data
+            this.setState({ questions })
+       
+          } catch (err) {
+            console.error(err.res.data);
+          }
+        };
+
+
+
+      
+
+
+
+  //=================================================================================
+  // Points Calculation
+  //=================================================================================
 
     totalPoints = () => {
           
@@ -33,146 +77,156 @@ export default class BaseballTrivia extends React.Component {
         ) 
     };
   
+    //=================================================================================
+    // Handle Increment
+    //=================================================================================
+
     handleIncrement = (num) => {
         console.log("working");
         // We always use the setState method to update a component's state
         this.setState({ point: num === "Zonk" ? 0 : (this.state.point + num) });
     };
   
+
+    //=================================================================================
+    // Render/Return Functions
+    //=================================================================================
+
+
     render() {
         return (
         
-            <Container >
+            <div className="containerTable ">
+
+
+{/* //=================================================================================
+    // Grid - Headers
+    //================================================================================= */}
+
+                    <Grid celled>
+                        <Grid.Row>
+                            <Grid.Column width={16}>
+                                <h3>Baseball Quiz</h3>
+                            </Grid.Column>
+                        </Grid.Row>
+
+
+{/* //=================================================================================
+    // Table - Left Side for Questions
+    //================================================================================= */}
                 
-                <Row>          
-                    <div className="score align-right">
-                        Total Points {this.totalPoints()}
-                    </div>
-                </Row>
-                
-                <Row>
-                    <Col size="md-6">
-                        <h3>Quiz</h3>
-                    </Col>
+                <Grid.Row>
+                    <Grid.Column width={7}>
+                        <h3>Quiz:</h3>
+                    
+                        {this.state.questions.map((question, index) => (
 
-                    <Col size="md-6">
-                        <div className="table">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                            <Table>
+                                <Table.Header>
+                                    <Table.Row>
+                                        <Table.HeaderCell>Question</Table.HeaderCell>
+                                        <Table.HeaderCell> A</Table.HeaderCell>
+                                        <Table.HeaderCell> B</Table.HeaderCell>
+                                        <Table.HeaderCell> C</Table.HeaderCell>
+                                        <Table.HeaderCell> D</Table.HeaderCell>
+                                    </Table.Row>
+                                </Table.Header>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                <Table.Body>
+                                    <Table.Row key={question._id} >
+                                        <Table.Cell>{question.question}</Table.Cell>
+                                        <Table.Cell>{question.answera}</Table.Cell>
+                                        <Table.Cell>{question.answerb}</Table.Cell>
+                                        <Table.Cell>{question.answerc}</Table.Cell>
+                                        <Table.Cell>{question.answerd}</Table.Cell>
+                                    </Table.Row>
+                                </Table.Body>
+                            </Table>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                            ))}
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                    </Grid.Column>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
-                                </tr>
+{/* //=================================================================================
+    // Grid - Right Side for Image Points
+    //================================================================================= */}
 
-                                <tr>
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                <Grid.Column width={9}>
+                                    <h3>Get Points or Get Zonked!</h3>
+                                    <h3> Total Points {this.totalPoints()} </h3>
+                                <Grid.Column width={16}>                        
+                  
+                                </Grid.Column>
+                                
+                                <Table>
+                                    <Table.Body>
+                                        <Table.Row>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
+                                        </Table.Row>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                        <Table.Row>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
-                                </tr>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
 
-                                <tr>
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                        </Table.Row>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                        <Table.Row>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
 
-                                    <th>
-                                        <button className="getpoints" onClick={this.handleIncrement} ></button>
-                                        <RandomNumber handleIncrement={this.handleIncrement}>
-                                            <img src={Baseball} alt="baseball" width="75" height="75"/>
-                                        </RandomNumber>
-                                    </th>
-                                </tr>
-                            </table>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+                                            <Table.Cell>
+                                                <RandomNumber handleIncrement={this.handleIncrement}>
+                                                    <img src={Baseball} alt="baseball" width="75" height="75"/>
+                                                </RandomNumber>
+                                            </Table.Cell>
+                                        </Table.Row>
+
+                                    </Table.Body>
+                                </Table>
+                            </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </div>
         );
     }
 }

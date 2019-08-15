@@ -10,11 +10,14 @@ const Navbar = props => {
                                 
                 <div className='navbar-nav'>
                     <Link to='/home' className='nav-item nav-link'>Sign Up/Sign In</Link>
-                    {/* <Link to='/stats' className='nav-item nav-link'>View Stats</Link> */}
-                    {/* <Link to='/searchquestions' className='nav-item nav-link'>Search Questions</Link> */}
-                    <Link to='/game/math' className='nav-item nav-link'>Math</Link>
-                    {/* <Link to='/game/science' className='nav-item nav-link'>Science</Link>
-                    <Link to='/game/socialstudies' className='nav-item nav-link'>US History</Link> */}
+                    <Link to='/game/math' className='nav-item nav-link'>Math Quiz</Link>
+                    <Link to='/game/science' className='nav-item nav-link'>Science Quiz</Link>
+                    <Link to='/game/ushistory' className='nav-item nav-link'>US History</Link>
+                    <Link to='/game/baseball' className='nav-item nav-link'>Baseball Quiz</Link>
+                    <Link to='/game/soccer' className='nav-item nav-link'>Soccer Quiz</Link>
+                    <Link to='/game/starwars' className='nav-item nav-link'>Star Wars Quiz</Link>
+                    <Link to='/game/jurassic' className='nav-item nav-link'>Jurassic Park Quiz</Link>
+                    <Link to='/game/music' className='nav-item nav-link'>80s Music Quiz</Link>
                     {/* <Link to='/quiz' className='nav-item nav-link'>Quiz</Link> */}
                 </div>
 

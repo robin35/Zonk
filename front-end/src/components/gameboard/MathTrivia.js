@@ -48,11 +48,6 @@ export default class MathTrivia extends React.Component {
           };
 
 
-
-        
-
-
-
     //=================================================================================
     // Points Calculation
     //=================================================================================
@@ -109,13 +104,6 @@ export default class MathTrivia extends React.Component {
                             </Grid.Column>
                         </Grid.Row>
    
-                        {/* <Grid.Row>
-                            <Grid.Column width={16}>
-                                <div className="score align-right">
-                                    <h3> Total Points {this.totalPoints()} </h3>
-                                </div>
-                            </Grid.Column>
-                        </Grid.Row> */}
 
 
 {/* //=================================================================================
@@ -124,7 +112,7 @@ export default class MathTrivia extends React.Component {
 
                     <Grid.Row>
                             <Grid.Column width={7}>
-                                <h3> Question:</h3>
+                                <h3> Quiz:</h3>
                   
                                 {this.state.questions.map((question, index) => (
 
@@ -162,10 +150,8 @@ export default class MathTrivia extends React.Component {
                                 <Grid.Column width={9}>
                                     <h3>Get Points or Get Zonked!</h3>
                                     <h3> Total Points {this.totalPoints()} </h3>
-                                    <Grid.Column width={16}>
-                                {/* <div className="score align-right">
-                                    
-                                </div> */}
+                                <Grid.Column width={16}>
+
                             </Grid.Column>
                                 
                                     <Table>
@@ -231,10 +217,8 @@ export default class MathTrivia extends React.Component {
                                             </Table.Row>
                                         </Table.Body>
                                     </Table>
-                                    </Grid.Column>
-                 
+                            </Grid.Column>
                     </Grid.Row>
-         
                 </Grid>
             </div>
         );

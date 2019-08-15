@@ -19,7 +19,7 @@ import NewGame from './components/game/NewGame';
 
 import MathTrivia from './components/gameboard/MathTrivia';
 import Science from './components/gameboard/Science';
-import SocialStudies from './components/gameboard/SocialStudies';
+import USHistory from './components/gameboard/SocialStudies';
 
 import Baseball from './components/gameboard/Baseball';
 import Soccer from './components/gameboard/Soccer';
@@ -58,14 +58,14 @@ const App = () => {
 
             <Route exact path="/game/math" component={MathTrivia} />
             <Route exact path="/game/science" component={Science} />
-            <Route exact path="/game/socialstudies" component={SocialStudies} />
+            <Route exact path="/game/ushistory" component={USHistory} />
 
             <Route exact path="/game/baseball" component={Baseball} />
             <Route exact path="/game/soccer" component={Soccer} />
             <Route exact path="/game/basketball" component={Basketball} />
             
             <Route exact path="/game/jurassic" component={Jurassic} />
-            <Route exact path="/game/80music" component={Music}/>
+            <Route exact path="/game/music" component={Music}/>
             <Route exact path="/game/starwars" component={StarWars} />
 
           </Switch>
