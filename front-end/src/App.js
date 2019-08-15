@@ -10,12 +10,10 @@ import Landing from './components/landing/Landing';
 import Signup from './components/login/Signup';
 import Signin from './components/login/Signin';
 
-import SearchQuestions from './components/questions/SearchQuestions';
-import QuestionDisplay from './components/questions/QuestionDisplay';
+import ViewQuestions from './components/questions/ViewQuestions';
 
 import Stats from './components/game/Stats';
 import NewGame from './components/game/NewGame';
-import GameBoard from './components/game/GameBoard';
 
 import MathTrivia from './components/gameboard/MathTrivia';
 import Science from './components/gameboard/Science';
@@ -50,20 +48,18 @@ const App = () => {
             <Route exact path= '/signin' component={Signin} />
             <Route exact path= '/signup' component={Signup} />
 
-            <Route exact path= '/searchquestions' component={SearchQuestions} />
-            <Route exact path= '/questions' component={QuestionDisplay} />
+            <Route exact path= '/questions' component={ViewQuestions} />
 
             <Route exact path= '/stats' component={Stats} />
-            <Route exact path= '/game' component={NewGame} />
-            <Route exact path= '/game/gameboard' component={GameBoard} />
+            <Route exact path= '/newgame' component={NewGame} />
 
             <Route exact path="/game/math" component={MathTrivia} />
             <Route exact path="/game/science" component={Science} />
             <Route exact path="/game/socialstudies" component={SocialStudies} />
 
-            <Route exact path="/game/baseballtrivia" component={Baseball} />
-            <Route exact path="/game/soccertrivia" component={Soccer} />
-            <Route exact path="/game/basketballtrivia" component={Basketball} />
+            <Route exact path="/game/baseball" component={Baseball} />
+            <Route exact path="/game/soccer" component={Soccer} />
+            <Route exact path="/game/basketball" component={Basketball} />
             
             <Route exact path="/game/jurassic" component={Jurassic} />
             <Route exact path="/game/80music" component={Music}/>

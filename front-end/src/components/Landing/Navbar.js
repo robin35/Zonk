@@ -10,13 +10,18 @@ const Navbar = props => {
                                 
                 <div className='navbar-nav'>
                     <Link to='/' className='nav-item nav-link'>Home</Link>
-                    <Link to='/game' className='nav-item nav-link'>Play Game</Link>
-                    <Link to='/stats' className='nav-item nav-link'>View Stats</Link>
-                    <Link to='/questions' className='nav-item nav-link'>Create Questions</Link>
-                    <Link to='/searchquestions' className='nav-item nav-link'>Search Questions</Link>
-
+                    {/* <Link to='/stats' className='nav-item nav-link'>View Stats</Link> */}
+                    {/* <Link to='/searchquestions' className='nav-item nav-link'>Search Questions</Link> */}
+                    <Link to='/game/math' className='nav-item nav-link'>Math</Link>
+                    <Link to='/game/science' className='nav-item nav-link'>Science</Link>
+                    <Link to='/game/socialstudies' className='nav-item nav-link'>US History</Link>
+                    {/* <Link to='/quiz' className='nav-item nav-link'>Quiz</Link> */}
                 </div>
 
+                <div>
+                    <Link to='/questions' className='nav-item nav-link'>View Questions</Link>
+                    
+                </div>
             </nav>
         </header>
     )

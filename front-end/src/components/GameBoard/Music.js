@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "../grid/Grid";
 import { TotalPoints, PointBoard } from "../pages/Points";
 import { RandomNumber, Zonk } from "./Math";
-import Music from "../images/80s.jpg";
-// import Egg from "../images/egg.jpg";
+import Music from "../../images/80s.jpg";
+// import Egg from "../../../public/images/egg.jpg";
 // import NavTabs from "./components/NavTabs/index";
 
 

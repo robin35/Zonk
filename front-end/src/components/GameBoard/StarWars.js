@@ -1,12 +1,12 @@
 import React from "react";
 import { RandomNumber, Zonk } from "./Math";
 import { Container, Row, Col } from "../grid/Grid";
-import Yoda from "../images/yoda.jpg";
-import Empire from "../images/empire.jpg";
-import Rebelion from "../images/rebelion.png";
-import StormTrooper from "../images/stormtrooper.jpg";
-import StarWars from "../images/starwars.jpg";
-import DarthVarder from "../images/darthvader.jpg";
+import Yoda from "../../images/yoda.jpg";
+import Empire from "../../images/empire.jpg";
+import Rebelion from "../../images/rebelion.png";
+import StormTrooper from "../../images/stormtrooper.jpg";
+import StarWars from "../../images/starwars.jpg";
+import DarthVarder from "../../images/darthvader.jpg";
 
 
 export default class Starwars extends React.Component {

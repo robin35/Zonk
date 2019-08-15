@@ -1,24 +1,37 @@
 //=====================================================================================================================
 // Dependencies
 //=====================================================================================================================
-
+const Question = require('../../models/Question');
 const express = require('express');
 
-const config = require('config');
-const {check, validationResult} = require ('express-validator');
 
+
+//=====================================================================================================================
+// Used to separate routes from the server.js file
+//=====================================================================================================================
 const router = express.Router();
 
-
 //=====================================================================================================================
-// this is basically a test route
-// @route   GET api/gameboard
-// @desc    Test route
-// @access  Public
+// @route   GET api/game
+// @desc    Get questions by topic
+// @access  Private
 //=====================================================================================================================
 
-router.get('/', (req, res) => res.send('Game route'));
+router.get('/:searchTopic', async (req, res) => {
 
+    let searchTopic = req.params.searchTopic
+
+    console.log(searchTopic)
+
+    try {
+        const questions = await Question.find({ topic: searchTopic });
+        res.json(questions);
+
+    } catch(err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+});
 
 
 //=====================================================================================================================

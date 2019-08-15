@@ -27,7 +27,7 @@ app.use(express.json({ extended: false}));
 app.get('/', (req,res) => res.send('API Running'));
 
 
-app.use('/api/game', require('./routes/api/game'));
+app.use('/api/newgame', require('./routes/api/newgame'));
 app.use('/api/home', require('./routes/api/home'));
 app.use('/api/stats', require('./routes/api/stats'));
 app.use('/api/signin', require('./routes/api/signin'));

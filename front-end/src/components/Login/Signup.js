@@ -94,7 +94,9 @@ const Signup = () => {
                       value='Sign Up' />    */}
 
                     <div className='buttons'>
-                        <button>Sign Up</button>
+                        <Link to='/'>
+                            <button>Sign Up</button>
+                        </Link>
                     </div>             
 
                 </form>

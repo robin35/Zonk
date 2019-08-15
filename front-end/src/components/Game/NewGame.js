@@ -2,11 +2,12 @@
 // Dependencies
 //==================================================================================================================================
 
-import React, { useState } from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-import { Container, Row, Col } from "../grid/Grid";
-import Dropdown from "react-bootstrap/Dropdown";
+// import { Container, Row, Col } from "../grid/Grid";
+import { Container, Grid, Card, Image, Header } from 'semantic-ui-react';
 
 
 
@@ -15,99 +16,168 @@ import Dropdown from "react-bootstrap/Dropdown";
 // Pass the questions to the appropriate gameboard.
 //==================================================================================================================================
 
-const NewGame = () => {
+class NewGame extends Component {
 
-    const [formData, setFormData] = useState({ searchTopic: '' });
-    const { searchTopic } = formData;
-    const onChange = event => setFormData({ searchTopic: event.target.value }); 
-
-    const onSubmit = async event => {
-        event.preventDefault();
-        console.log(formData);
-
-        try {
-            const res = await axios.get(`/api/searchquestions/${searchTopic}`);
-            console.log(res.data);
-
-            
-
-        } catch(err) {
+    state = { 
+        searchTopic: 'Select a topic', 
+        questions: [], 
+        topicLink: ''
+      };
+    
+        onSubmit = async event => {
+            event.preventDefault();
+        
+            try {
+                const res = await axios.get(`/api/searchquestions/${this.state.searchTopic}`);
+                console.log(res.data);
+                const questions = res.data
+                this.setState({ questions })
+            } catch (err) {
             console.error(err.res.data);
+            }
         }
-    };
+     
+      onClick = event => {
+        event.preventDefault()
+        const { name, value } = event.target
+        this.setState({
+          [name]: value
+        });
+
+        // let topicLink = "";
+        // switch (this.state.value) {
+        //     case 'Mathematics':
+        //         topicLink = '/game/math';
+        //         console.log(topicLink);
+        //         return topicLink;
+
+        //     case 'Science':
+        //         topicLink='/science';
+        //         console.log(topicLink);
+        //         return topicLink;
+                
+        //     case 'US History':
+        //         topicLink='/socialstudies';
+        //         console.log(topicLink);
+        //         return topicLink;
+                
+        //     case 'Baseball':
+        //         topicLink='/baseball';
+        //         console.log(topicLink);
+        //         return topicLink;
+                
+        //     case 'Football':
+        //         topicLink='/basketball';
+        //         console.log(topicLink);
+        //         return topicLink;
+                
+        //     case 'Soccer':
+        //         topicLink='/soccer';
+        //         console.log(topicLink);
+        //         return topicLink;
+                
+        //     case '80s Music':
+        //         topicLink='/80music';
+        //         console.log(topicLink);
+        //         return topicLink;
+                
+        //     case 'Jurassic Park':
+        //         topicLink='/jurassic';
+        //         console.log(topicLink);
+        //         return topicLink;
+                
+        //     case 'Star Wars':
+        //         topicLink='/starwars';
+        //         console.log(topicLink);
+        //         return topicLink;
+
+        //     default:
+        //         return null;
+        //     };
+        }
+
+
+
 
 
     //==============================================================================================================================
     // The body of the New Game page starts here
     //==============================================================================================================================
 
+    render() {
+
     return (
+ 
+        <Container >
 
-        <Container onSubmit={ event => onSubmit(event) } >
-
-            <h1 className="display-4">READY FOR A CHALLENGE??</h1>
-            <h1 className="display-4">Choose a topic!</h1>
-            <hr className="my-4" />
+        <form onSubmit={event => this.onSubmit(event)}>
+            <h1 >READY FOR A CHALLENGE??</h1>
+            <h1 >Choose a topic!</h1>
+            <hr />
             
-            <Row>
-                <Col size="md-4">
-                    <h2 className="card-title">SUBJECT YOU COGNIZE</h2>
-                    <img src={require('./study.png')} alt="Trivia" width="175" height="100"></img>
+            <Grid columns={3}>
+                <Grid.Row>
 
-                    <div className="card-body">
-                    <Dropdown onChange={ event => onChange(event) }>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">                      
-                            Study
-                        </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="/game/math">Math</Dropdown.Item>
-                                <Dropdown.Item href="/game/science">Science</Dropdown.Item>
-                                <Dropdown.Item href="/game/socialstudies">Social Studies</Dropdown.Item>    
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
-                </Col>
+                    <Grid.Column>
+                        <Card>
+                            <Header color='green'><h3><strong>SUBJECTS YOU COGNIZE</strong></h3></Header>
+                            <Image size='small' floated='right' src={ require('../../images/study.png' ) } />
 
-                <Col size="md-4">
-                    <h2 className="card-title">SPORT YOU DIG!!</h2>
-                    <img src={require('./sports.png')} alt="Trivia" width="175" height="175"></img>
+                            <Card.Content>
+                                <select value={this.state.searchTopic} name="searchTopic" onChange={event => this.onClick(event)}>
+                                    <option value='Select a topic'>Select a Subject</option>
+                                    <option value='Mathematics'>Mathematics</option>
+                                    <option value="Science">Science</option>
+                                    <option value="US History">US History</option>                                   
+                                </select>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
 
-                    <div className="card-body">
-                        <Dropdown onChange={ event => onChange(event) }>
-                            <Dropdown.Toggle variant="warning" id="dropdown-basic">                      
-                                Sports
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                    <Dropdown.Item href="/game/baseballtrivia">Baseball</Dropdown.Item>
-                                    <Dropdown.Item href="/game/soccertrivia">Soccer</Dropdown.Item>
-                                    <Dropdown.Item href="/game/basketballtrivia">Basketball</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
-                </Col>
+                    <Grid.Column>
+                        <Card>
+                            <Header color='yellow'><h3><strong>SPORTS YOU DIG!!</strong></h3></Header>
+                            <Image size='small' floated='right' src={ require( '../../images/sports.png' ) } />
 
-                <Col size="md-4">
-                    <h2 className="card-title">TOPIC YOU KNOW</h2>
-                    <img src={require('./Trivia.png')} alt="Trivia" width="175" height="100"></img>
+                            <Card.Content>
+                                <select value={this.state.searchTopic} name="searchTopic" onChange={event => this.onClick(event)}>
+                                    <option value='Select a topic'>Select a Sport</option>
+                                    <option value="Baseball">Baseball</option>
+                                    <option value="Football">Football</option>
+                                    <option value="Soccer">Soccer</option>
+                                </select>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
 
-                    <div className="card-body">
-                        <Dropdown onChange={ event => onChange(event) }>
-                            <Dropdown.Toggle variant="danger" id="dropdown-basic">                      
-                                Trivia
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="/game/jurassic" >Jurassic Park</Dropdown.Item>
-                                <Dropdown.Item href="/game/80music">80s Music</Dropdown.Item>
-                                <Dropdown.Item href="/game/starwars">Star Wars</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
-                </Col>
+                    <Grid.Column>
+                        <Card fluid >
+                            <Header color='red'><h3><strong>TOPICS YOU KNOW</strong></h3></Header>
+                            <Image src={ require('../../images/trivia.png' ) } />
 
-            </Row>
+                            <Card.Content>
+                                <select value={this.state.searchTopic} name="searchTopic" onChange={event => this.onClick(event)}>
+                                    <option value='Select a topic'>Select a Topic</option>
+                                    <option value="80s Music">80s Music</option>
+                                    <option value="Jurassic Park">Jurassic Park</option>
+                                    <option value="Star Wars">Star Wars</option>                                   
+                                </select>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+            <br />
+            <div className='buttons'>
+                {/* <Link to={this.state.topicLink}> */}
+                    <button type="submit">New Game</button>
+                    {/* </Link> */}
+            </div>
+            <br />
+        </form>
         </Container>
         )
     };
     
-   
+}
     export default NewGame;

@@ -1,6 +1,6 @@
 [
  {
-   "topic": "Mathmatics",
+   "topic": "Mathematics",
    "question": "The perimeter of a circle is also known as what?",
    "answera": "circumference",
    "answerb": "radius",
@@ -9,16 +9,7 @@
    "correct": "A"
  },
  {
-   "topic": "Mathmatics",
-   "question": "65 - 43",
-   "answera": "27",
-   "answerb": "22",
-   "answerc": "13",
-   "answerd": "31",
-   "correct": "B"
- },
- {
-   "topic": "Mathmatics",
+   "topic": "Mathematics",
    "question": "What's the square root of 144",
    "answera": "8",
    "answerb": "14",
@@ -27,7 +18,7 @@
    "correct": "C"
  },
  {
-   "topic": "Mathmatics",
+   "topic": "Mathematics",
    "question": "What degree angle is considered a right angle?",
    "answera": "90",
    "answerb": "80",
@@ -36,16 +27,7 @@
    "correct": "A"
  },
  {
-   "topic": "Mathmatics",
-   "question": "7 * 9",
-   "answera": "78",
-   "answerb": "90",
-   "answerc": "63",
-   "answerd": "40",
-   "correct": "C"
- },
- {
-   "topic": "Mathmatics",
+   "topic": "Mathematics",
    "question": "5 to the power of 0 equals what?",
    "answera": "0",
    "answerb": "5",
@@ -54,85 +36,13 @@
    "correct": "D"
  },
  {
-   "topic": "Mathmatics",
+   "topic": "Mathematics",
    "question": "What is an angle more than 90 degrees but less than 180 degrees?",
    "answera": "acute",
    "answerb": "obtuse",
-   "answerc": "isoceles",
+   "answerc": "isosceles",
    "answerd": "uneven",
    "correct": "B"
- },
- {
-   "topic": "Mathmatics",
-   "question": "A polygon with 8 sides is called?",
-   "answera": "pentagon",
-   "answerb": "triangle",
-   "answerc": "square",
-   "answerd": "octogon",
-   "correct": "D"
- },
- {
-   "topic": "Mathmatics",
-   "question": "What's the top number of a fraction called?",
-   "answera": "numerator",
-   "answerb": "denominator",
-   "answerc": "uneven",
-   "answerd": "mixed",
-   "correct": "A"
- },
- {
-   "topic": "Mathmatics",
-   "question": "What does 3 squared equal?",
-   "answera": "12",
-   "answerb": "9",
-   "answerc": "10",
-   "answerd": "3",
-   "correct": "B"
- },
- {
-   "topic": "Mathmatics",
-   "question": "How many types of triangles are there?",
-   "answera": "4",
-   "answerb": "5",
-   "answerc": "6",
-   "answerd": "7",
-   "correct": "A"
- },
- {
-   "topic": "Mathmatics",
-   "question": "How many sides does a nonagon have?",
-   "answera": "10",
-   "answerb": "11",
-   "answerc": "9",
-   "answerd": "5",
-   "correct": "C"
- },
- {
-   "topic": "Mathmatics",
-   "question": "What is the definition of a prime number?",
-   "answera": "A number only divisible by 1 and itself",
-   "answerb": "a number in pi",
-   "answerc": "part of how to find the radius of a circle",
-   "answerd": "an odd number",
-   "correct": "A"
- },
- {
-   "topic": "Mathmatics",
-   "question": "What's 2 + 2?",
-   "answera": "2",
-   "answerb": "1",
-   "answerc": "3",
-   "answerd": "4",
-   "correct": "D"
- },
- {
-   "topic": "Mathmatics",
-   "question": "What 2 * 7",
-   "answera": "12",
-   "answerb": "13",
-   "answerc": "14",
-   "answerd": "15",
-   "correct": "C"
  },
  {
    "topic": "Science",
@@ -142,15 +52,6 @@
    "answerc": "As",
    "answerd": "Ar",
    "correct": "A"
- },
- {
-   "topic": "Science",
-   "question": "What does ATP stand for?",
-   "answera": "Association of Tennis Professionals",
-   "answerb": "Adenosine Triphosphate",
-   "answerc": "Academy of Trained Pilots",
-   "answerd": "Academy of Teacher Progression",
-   "correct": "B"
  },
  {
    "topic": "Science",
@@ -181,93 +82,12 @@
  },
  {
    "topic": "Science",
-   "question": "What causes an aurora?",
-   "answera": "Magic",
-   "answerb": "A change in the sunset time",
-   "answerc": "season changes",
-   "answerd": "Particles changing direction in respone to solar winds",
-   "correct": "D"
- },
- {
-   "topic": "Science",
-   "question": "About how old is the sun?",
-   "answera": "2 millions",
-   "answerb": "3 million",
-   "answerc": "5 billion",
-   "answerd": "300 million",
-   "correct": "C"
- },
- {
-   "topic": "Science",
    "question": "What can cause a tsunami?",
    "answera": "an earthquake",
-   "answerb": "volanic eruption",
+   "answerb": "volcanic eruption",
    "answerc": "underwater landslide",
    "answerd": "all of the above",
    "correct": "D"
- },
- {
-   "topic": "Science",
-   "question": "What is the unit Scoville heat used for?",
-   "answera": "Measuring the spice of chiles",
-   "answerb": "to measure earthquake magnitude",
-   "answerc": "to measure volcano erputions",
-   "answerd": "to measure tsumani wave heights",
-   "correct": "A"
- },
- {
-   "topic": "Science",
-   "question": "What is the biggest volcano in the world?",
-   "answera": "Krakatoa",
-   "answerb": "Mt. St. Helen",
-   "answerc": "Mauna Kea",
-   "answerd": "Mauna Loa, Hawaii",
-   "correct": "D"
- },
- {
-   "topic": "Science",
-   "question": "If your body cannot properly produce insulin, what disease would you have?",
-   "answera": "Hypertension",
-   "answerb": "Hyperglycemia",
-   "answerc": "Type I Diabetes",
-   "answerd": "Heart Disease",
-   "correct": "C"
- },
- {
-   "topic": "Science",
-   "question": "Where are the smallest bones in your body?",
-   "answera": "In your fingers",
-   "answerb": "in your wrist",
-   "answerc": "in your ankle",
-   "answerd": "in your ears",
-   "correct": "D"
- },
- {
-   "topic": "Science",
-   "question": "What is the periodic symbol for Potassium?",
-   "answera": "K",
-   "answerb": "P",
-   "answerc": "Pt",
-   "answerd": "Pa",
-   "correct": "A"
- },
- {
-   "topic": "Science",
-   "question": "What is tachycardia?",
-   "answera": "a type of EKG",
-   "answerb": "a consistent heart beat above 100 bpm",
-   "answerc": "a slow heartbeat",
-   "answerd": "a normal heartbeat",
-   "correct": "B"
- },
- {
-   "topic": "Science",
-   "question": "Which organ is responsible for filtering blood?",
-   "answera": "kidneys",
-   "answerb": "heart",
-   "answerc": "liver",
-   "answerd": "lungs",
-   "correct": "C"
  },
  {
    "topic": "US History",
@@ -307,102 +127,12 @@
  },
  {
    "topic": "US History",
-   "question": "What was the name of the first American Consitution?",
+   "question": "What was the name of the first American Constitution?",
    "answera": "Articles of Confederation",
    "answerb": "Bill of Rights",
    "answerc": "Magna Carta",
    "answerd": "The Papers",
    "correct": "A"
- },
- {
-   "topic": "US History",
-   "question": "What major countries were in the Allied Powers along with the United States in WWII?",
-   "answera": "England, France and Russia",
-   "answerb": "Japan and Germany",
-   "answerc": "Australia and New Zealand",
-   "answerd": "India and China",
-   "correct": "A"
- },
- {
-   "topic": "US History",
-   "question": "When was the United Nations founded?",
-   "answera": "1980",
-   "answerb": "1931",
-   "answerc": "1945",
-   "answerd": "1905",
-   "correct": "C"
- },
- {
-   "topic": "US History",
-   "question": "Who invented the lightbulb?",
-   "answera": "Nikola Tesla",
-   "answerb": "Thomas Edison",
-   "answerc": "Alexander Graham Bell",
-   "answerd": "Isaac Newton",
-   "correct": "B"
- },
- {
-   "topic": "US History",
-   "question": "What book-turned-movie was based on the populist movement?",
-   "answera": "Pride and Prejudice",
-   "answerb": "The Wizard of Oz",
-   "answerc": "Oklahoma!",
-   "answerd": "The Sound of Music",
-   "correct": "B"
- },
- {
-   "topic": "US History",
-   "question": "How many terms can a president legally serve?",
-   "answera": "four",
-   "answerb": "two",
-   "answerc": "three",
-   "answerd": "one",
-   "correct": "B"
- },
- {
-   "topic": "US History",
-   "question": "When did the Great Depression begin?",
-   "answera": "1989",
-   "answerb": "1937",
-   "answerc": "1929",
-   "answerd": "1901",
-   "correct": "C"
- },
- {
-   "topic": "US History",
-   "question": "Kurt Vonnegut wrote the Slaughterhouse Five based on what experience in his life?",
-   "answera": "Being a prisoner of war during WWII",
-   "answerb": "his travels around the world",
-   "answerc": "none of the above",
-   "answerd": "all of the above",
-   "correct": "A"
- },
- {
-   "topic": "US History",
-   "question": "What was the last state to become a state?",
-   "answera": "Hawaii",
-   "answerb": "Alaska",
-   "answerc": "Vermont",
-   "answerd": "Texas",
-   "correct": "B"
- },
- {
-   "topic": "US History",
-   "question": "What was the first state to become a state?",
-   "answera": "Delaware",
-   "answerb": "Georgia",
-   "answerc": "Virginia",
-   "answerd": "New York",
-   "correct": "A"
- },
- {
-   "topic": "US History",
-   "question": "Who helped Lewis and Clark on the exploration?",
-   "answera": "Pocahontas",
-   "answerb": "John Smith",
-   "answerc": "Teddy Roosevelt",
-   "answerd": "Sacagewea",
-   "correct": "D"
  },
  {
    "topic": "Baseball",
@@ -450,96 +180,6 @@
    "correct": "A"
  },
  {
-   "topic": "Baseball",
-   "question": "What is the oldest active ballpark in the US?",
-   "answera": "Wrigley Field",
-   "answerb": "Fenway Park",
-   "answerc": "Globe Life Park",
-   "answerd": "SunTrust Park",
-   "correct": "B"
- },
- {
-   "topic": "Baseball",
-   "question": "What team did Michael Jordan briefly play for?",
-   "answera": "Chicago Cubs",
-   "answerb": "Chicago White Sox",
-   "answerc": "NY Mets",
-   "answerd": "TX Rangers",
-   "correct": "B"
- },
- {
-   "topic": "Baseball",
-   "question": "From what other country do a majority of MLB players come from",
-   "answera": "Dominican Republic",
-   "answerb": "Japan",
-   "answerc": "Cuba",
-   "answerd": "Bahamas",
-   "correct": "A"
- },
- {
-   "topic": "Baseball",
-   "question": "Where is the national baseball hall of fame located?",
-   "answera": "New Jersey",
-   "answerb": "Pennsylvania",
-   "answerc": "Texas",
-   "answerd": "New York",
-   "correct": "D"
- },
- {
-   "topic": "Baseball",
-   "question": "Where was the first MLB All-Star game played?",
-   "answera": "Chicago",
-   "answerb": "NYC",
-   "answerc": "Austin",
-   "answerd": "Dallas",
-   "correct": "A"
- },
- {
-   "topic": "Baseball",
-   "question": "Who holds the highest career batting average of all time?",
-   "answera": "Cal Ripken, Jr.",
-   "answerb": "Babe Ruth",
-   "answerc": "Ty Cobb",
-   "answerd": "Cy Young",
-   "correct": "C"
- },
- {
-   "topic": "Baseball",
-   "question": "Against what team did Babe Ruth hit his first career home run?",
-   "answera": "NY Mets",
-   "answerb": "Brooklyn Dodgers",
-   "answerc": "NY Yankees",
-   "answerd": "Boston Red Sox",
-   "correct": "C"
- },
- {
-   "topic": "Baseball",
-   "question": "Who was the first MLB player to pitch above a 100 mph?",
-   "answera": "Babe Ruth",
-   "answerb": "Nolan Ryan",
-   "answerc": "Ty Cobb",
-   "answerd": "Cy Young",
-   "correct": "B"
- },
- {
-   "topic": "Baseball",
-   "question": "Who was the first MLB player to have his number retired?",
-   "answera": "Babe Ruth",
-   "answerb": "Nolan Ryan",
-   "answerc": "Ty Cobb",
-   "answerd": "Lou Gehrig",
-   "correct": "D"
- },
- {
-   "topic": "Baseball",
-   "question": "What condition did Lou Gehrig eventually pass away from?",
-   "answera": "Heart disease",
-   "answerb": "ALS",
-   "answerc": "Cancer",
-   "answerd": "none of the above",
-   "correct": "B"
- },
- {
    "topic": "Soccer",
    "question": "What was the original World Cup trophy made out of?",
    "answera": "newspaper",
@@ -585,96 +225,6 @@
    "correct": "C"
  },
  {
-   "topic": "Soccer",
-   "question": "What were the first soccer nets made out of?",
-   "answera": "wicker baskets",
-   "answerb": "rope",
-   "answerc": "metal",
-   "answerd": "plastic",
-   "correct": "A"
- },
- {
-   "topic": "Soccer",
-   "question": "What do the 32 panels on a soccer ball represent?",
-   "answera": "team members",
-   "answerb": "one for each country in europe",
-   "answerc": "for the amount of time in the game",
-   "answerd": "for the number of plays in the game",
-   "correct": "B"
- },
- {
-   "topic": "Soccer",
-   "question": "What country was soccer invented in?",
-   "answera": "Australia",
-   "answerb": "Brazil",
-   "answerc": "Portugal",
-   "answerd": "England",
-   "correct": "D"
- },
- {
-   "topic": "Soccer",
-   "question": "Who is the highest paid soccer player currently?",
-   "answera": "Cristiano Ronoldo",
-   "answerb": "Emre Mor",
-   "answerc": "Keaton Parks",
-   "answerd": "Lionel Messi",
-   "correct": "D"
- },
- {
-   "topic": "Soccer",
-   "question": "What was the highest ever score in a soccer game?",
-   "answera": "90",
-   "answerb": "1490",
-   "answerc": "12",
-   "answerd": "120",
-   "correct": "B"
- },
- {
-   "topic": "Soccer",
-   "question": "When was soccer first played in the Olympics?",
-   "answera": "1910",
-   "answerb": "1920",
-   "answerc": "1980",
-   "answerd": "1908",
-   "correct": "D"
- },
- {
-   "topic": "Soccer",
-   "question": "When were cleats and shin guards introduced?",
-   "answera": "1965",
-   "answerb": "1955",
-   "answerc": "1874",
-   "answerd": "1939",
-   "correct": "C"
- },
- {
-   "topic": "Soccer",
-   "question": "When was FIFA established?",
-   "answera": "1945",
-   "answerb": "1904",
-   "answerc": "1899",
-   "answerd": "1956",
-   "correct": "B"
- },
- {
-   "topic": "Soccer",
-   "question": "Who won the first women's world cup?",
-   "answera": "USA",
-   "answerb": "Brazil",
-   "answerc": "Mexico",
-   "answerd": "Russia",
-   "correct": "A"
- },
- {
-   "topic": "Soccer",
-   "question": "Which country has the most world cup wins?",
-   "answera": "Mexico",
-   "answerb": "Spain",
-   "answerc": "USA",
-   "answerd": "Brazil",
-   "correct": "D"
- },
- {
    "topic": "Football",
    "question": "What NBA player has never fouled out of a game?",
    "answera": "Kareem Abdul-Jabbar",
@@ -712,102 +262,12 @@
  },
  {
    "topic": "Football",
-   "question": "Who is the current NBA commisioner?",
+   "question": "Who is the current NBA commissioner?",
    "answera": "Maurice Podoloff",
    "answerb": "Larry O'Brien",
    "answerc": "Adam Silver",
    "answerd": "Pat Riley",
    "correct": "C"
- },
- {
-   "topic": "Football",
-   "question": "What team did the \"Bad Boys\" of the NBA play for?",
-   "answera": "NY Knicks",
-   "answerb": "LA Lakers",
-   "answerc": "Detroit Pistons",
-   "answerd": "Dallas Mavs",
-   "correct": "C"
- },
- {
-   "topic": "Football",
-   "question": "What team did Michael Jordan famously play for?",
-   "answera": "Seattle SuperSonics",
-   "answerb": "Chicago Bulls",
-   "answerc": "Utah Jazz",
-   "answerd": "Philly 76ers",
-   "correct": "B"
- },
- {
-   "topic": "Football",
-   "question": "Who owns the Dallas Mavericks?",
-   "answera": "Mark Cuban",
-   "answerb": "Robert Kraft",
-   "answerc": "Dirk Nowitzki",
-   "answerd": "Jerry Jones",
-   "correct": "A"
- },
- {
-   "topic": "Football",
-   "question": "What NBA team has played the most finals games?",
-   "answera": "Brooklyn Nets",
-   "answerb": "Orlando Magic",
-   "answerc": "Miami Heat",
-   "answerd": "LA Lakers",
-   "correct": "D"
- },
- {
-   "topic": "Football",
-   "question": "What famous NBA player has endorsement deals with Gold Bond and Icy Hot?",
-   "answera": "LeBron James",
-   "answerb": "Steph Curry",
-   "answerc": "Shaquille O'Neal",
-   "answerd": "Isiah Thomas",
-   "correct": "C"
- },
- {
-   "topic": "Football",
-   "question": "Where did the Seattke SuperSonics move to?",
-   "answera": "Utah Jazz",
-   "answerb": "LA Clippers",
-   "answerc": "SA Spurs",
-   "answerd": "OKC Thunder",
-   "correct": "D"
- },
- {
-   "topic": "Football",
-   "question": "Who starred in Shazam?",
-   "answera": "Michael Jordan",
-   "answerb": "Dennis Rodman",
-   "answerc": "Elvin Hayes",
-   "answerd": "Shaquille O'Neal",
-   "correct": "D"
- },
- {
-   "topic": "Football",
-   "question": "Who starred in Space Jam?",
-   "answera": "Chris Webber",
-   "answerb": "Shawn Kemp",
-   "answerc": "Michael Jordan",
-   "answerd": "James Worthy",
-   "correct": "C"
- },
- {
-   "topic": "Football",
-   "question": "What Lakers player could have played for the Bulls if the Bulls won a coin toss?",
-   "answera": "Larry Bird",
-   "answerb": "Kevin McHale",
-   "answerc": "Magic Johnson",
-   "answerd": "Tim Duncan",
-   "correct": "C"
- },
- {
-   "topic": "Football",
-   "question": "What NBA team is named after a car part?",
-   "answera": "Milwaukee Bucks",
-   "answerb": "NO Pelicans",
-   "answerc": "Denver Nuggets",
-   "answerd": "Detroit Pistons",
-   "correct": "D"
  },
  {
    "topic": "Jurassic Park",
@@ -820,48 +280,12 @@
  },
  {
    "topic": "Jurassic Park",
-   "question": "Who was Chris Pratt's character in the 2015 film?",
-   "answera": "Tim Pruitt",
-   "answerb": "Andy Dwyer",
-   "answerc": "Peter Quill",
-   "answerd": "Owen Grady",
-   "correct": "D"
- },
- {
-   "topic": "Jurassic Park",
    "question": "Who directed the original 1993 film Jurassic Park",
    "answera": "Francis Ford Coppola",
    "answerb": "Steven Spielberg",
    "answerc": "Adam Sandler",
    "answerd": "Christopher Nolan",
    "correct": "B"
- },
- {
-   "topic": "Jurassic Park",
-   "question": "Who does Sam Neill star as in Jurassic Park",
-   "answera": "John Hammond",
-   "answerb": "Dr. Alan Grant",
-   "answerc": "himself",
-   "answerd": "none of the above",
-   "correct": "B"
- },
- {
-   "topic": "Jurassic Park",
-   "question": "Who does Jeff Goldblum star as in Jurassic Park?",
-   "answera": "Dr. Alan Grant",
-   "answerb": "Dr. Ian Malcolm",
-   "answerc": "John Hammond",
-   "answerd": "none of the above",
-   "correct": "B"
- },
- {
-   "topic": "Jurassic Park",
-   "question": "Richard Attenborough stars as who?",
-   "answera": "John Hammond",
-   "answerb": "Dr. Alan Grant",
-   "answerc": "Dr. Ian Malcolm",
-   "answerd": "none of the above",
-   "correct": "A"
  },
  {
    "topic": "Jurassic Park",
@@ -874,39 +298,12 @@
  },
  {
    "topic": "Jurassic Park",
-   "question": "What character did Laura Dern play in Jurassic Park?",
-   "answera": "Dr. Ellie Sattler",
-   "answerb": "herself",
-   "answerc": "Ellen Ripley",
-   "answerd": "none of the above",
-   "correct": "A"
- },
- {
-   "topic": "Jurassic Park",
-   "question": "BD Wong played what Doctor in the film?",
-   "answera": "Dr. George Huang",
-   "answerb": "Dr. Henry Wu",
-   "answerc": "Dr. Edmund Ren",
-   "answerd": "none of the above",
-   "correct": "B"
- },
- {
-   "topic": "Jurassic Park",
    "question": "How long was the idea of Jurassic World in the works until production?",
    "answera": "since 1989",
    "answerb": "since 2005",
    "answerc": "since 2013",
    "answerd": "since 2001",
    "correct": "D"
- },
- {
-   "topic": "Jurassic Park",
-   "question": "Who was approached with the idea of playing the main character Owen Grady in Jurassic World",
-   "answera": "Leo DiCaprio",
-   "answerb": "John Krasinski",
-   "answerc": "Tom Hardy",
-   "answerd": "Chris Hemsworth",
-   "correct": "B"
  },
  {
    "topic": "Jurassic Park",
@@ -918,36 +315,9 @@
    "correct": "C"
  },
  {
-   "topic": "Jurassic Park",
-   "question": "What famous talk show host had a cameo in the film?",
-   "answera": "Seth Myers",
-   "answerb": "Jay Leno",
-   "answerc": "Jimmy Fallon",
-   "answerd": "Craig Ferguson",
-   "correct": "C"
- },
- {
-   "topic": "Jurassic Park",
-   "question": "What is the name of the dinosaur who escapes from the enclosure?",
-   "answera": "T. Rex",
-   "answerb": "Indominus Rex",
-   "answerc": "Velicoraptor",
-   "answerd": "Pterodactyl",
-   "correct": "B"
- },
- {
-   "topic": "Jurassic Park",
-   "question": "Who directed Jurassic World?",
-   "answera": "Christopher Nolan",
-   "answerb": "Robert Zemeckis",
-   "answerc": "Colin Trevorrow",
-   "answerd": "Steven Spielberg",
-   "correct": "C"
- },
- {
    "topic": "Star Wars",
    "question": "What is the name of Han Solo's ship?",
-   "answera": "Millenium falcon",
+   "answera": "Millennium falcon",
    "answerb": "Kobayashi Maru",
    "answerc": "The Black Pearl",
    "answerd": "USS Enterprise",
@@ -955,7 +325,7 @@
  },
  {
    "topic": "Star Wars",
-   "question": "What weapon is used by jedi knights in Star Wars?",
+   "question": "What weapon is used by Jedi knights in Star Wars?",
    "answera": "sword",
    "answerb": "knife",
    "answerc": "light saber",
@@ -982,96 +352,6 @@
  },
  {
    "topic": "Star Wars",
-   "question": "Hoe many engines on an X wing fighter?",
-   "answera": "5",
-   "answerb": "6",
-   "answerc": "4",
-   "answerd": "9",
-   "correct": "C"
- },
- {
-   "topic": "Star Wars",
-   "question": "Jedi Council consists of how many members",
-   "answera": "13",
-   "answerb": "9",
-   "answerc": "12",
-   "answerd": "11",
-   "correct": "C"
- },
- {
-   "topic": "Star Wars",
-   "question": "What is the invisible power that binds the universe together?",
-   "answera": "magnets",
-   "answerb": "light",
-   "answerc": "sound",
-   "answerd": "the force",
-   "correct": "D"
- },
- {
-   "topic": "Star Wars",
-   "question": "Who are the masters of the Dark Side who want to rule the galaxy?",
-   "answera": "The empire",
-   "answerb": "the resistance",
-   "answerc": "The Sith",
-   "answerd": "none of the above",
-   "correct": "C"
- },
- {
-   "topic": "Star Wars",
-   "question": "Which country was the home base for photography on Revenge of the Sith",
-   "answera": "New Zealand",
-   "answerb": "Canada",
-   "answerc": "China",
-   "answerd": "Australia",
-   "correct": "D"
- },
- {
-   "topic": "Star Wars",
-   "question": "What magazine namd Star Wars the year's best movie in 1977",
-   "answera": "People",
-   "answerb": "Time",
-   "answerc": "New Yorker",
-   "answerd": "Ok!",
-   "correct": "B"
- },
- {
-   "topic": "Star Wars",
-   "question": "What bounty hunter captures Han Solo?",
-   "answera": "Jar Jar Blinks",
-   "answerb": "Boba Fett",
-   "answerc": "Jabba the Hut",
-   "answerd": "Darth Vader",
-   "correct": "B"
- },
- {
-   "topic": "Star Wars",
-   "question": "Padme is the senator from what peaceful planet?",
-   "answera": "Earth",
-   "answerb": "Pluto",
-   "answerc": "Naboo",
-   "answerd": "Tatooine",
-   "correct": "C"
- },
- {
-   "topic": "Star Wars",
-   "question": "What planet is Luke from?",
-   "answera": "Alderaan",
-   "answerb": "Hoth",
-   "answerc": "Tatooine",
-   "answerd": "Naboo",
-   "correct": "C"
- },
- {
-   "topic": "Star Wars",
-   "question": "What is the mobile space station nicknamed the \"planet killer\"",
-   "answera": "Bespin",
-   "answerb": "Coruscant",
-   "answerc": "The Death Star",
-   "answerd": "Yavin",
-   "correct": "F"
- },
- {
-   "topic": "Star Wars",
    "question": "What planet is Anakin Skywalker from?",
    "answera": "Mustafar",
    "answerb": "Kashyyyk",
@@ -1090,7 +370,7 @@
  },
  {
    "topic": "80s Music",
-   "question": "What song by duran duran sampled laughter by a bandmate's girlfriend?",
+   "question": "What song by Duran Duran sampled laughter by a bandmate's girlfriend?",
    "answera": "ordinary world",
    "answerb": "save a prayer",
    "answerc": "hungry like the wolf",
@@ -1117,101 +397,11 @@
  },
  {
    "topic": "80s Music",
-   "question": "Who is the lead singer of Def Leppard?",
-   "answera": "Sting",
-   "answerb": "Steve Perry",
-   "answerc": "Tom Petty",
-   "answerd": "Joe Eliiott",
-   "correct": "D"
- },
- {
-   "topic": "80s Music",
-   "question": "What year did George Michael release Careless Whisper?",
-   "answera": "1982",
-   "answerb": "1985",
-   "answerc": "1984",
-   "answerd": "1987",
-   "correct": "C"
- },
- {
-   "topic": "80s Music",
-   "question": "What is the name of Guns N' Roses best selling album of 1987?",
-   "answera": "Use your illusion",
-   "answerb": "Appetite for Destruction",
-   "answerc": "G N R Lies",
-   "answerd": "Chinese Democracy",
-   "correct": "B"
- },
- {
-   "topic": "80s Music",
-   "question": "Which member of Queen wrote Who Wants to Live Forever?",
-   "answera": "Freddie Mercury",
-   "answerb": "Brian May",
-   "answerc": "John Deacon",
-   "answerd": "Roger Taylor",
-   "correct": "B"
- },
- {
-   "topic": "80s Music",
-   "question": "Born in the USA was sung by?",
-   "answera": "Prince",
-   "answerb": "George Michael",
-   "answerc": "David Bowie",
-   "answerd": "Bruce Springsteen",
-   "correct": "D"
- },
- {
-   "topic": "80s Music",
-   "question": "Gordon Matter Sumner is better known by what stage name?",
-   "answera": "Prince",
-   "answerb": "Ziggy Stardust",
-   "answerc": "Sting",
-   "answerd": "none of the above",
-   "correct": "C"
- },
- {
-   "topic": "80s Music",
-   "question": "James Hetfield was in what band?",
-   "answera": "Iron Maiden",
-   "answerb": "Metallica",
-   "answerc": "The Clash",
-   "answerd": "The Police",
-   "correct": "B"
- },
- {
-   "topic": "80s Music",
-   "question": "How many weeks did Pronce's album purple rain spend at number 1 in the USA",
-   "answera": "12",
-   "answerb": "15",
-   "answerc": "24",
-   "answerd": "31",
-   "correct": "C"
- },
- {
-   "topic": "80s Music",
-   "question": "What popular song did Elton John release in 1983?",
-   "answera": "I'm Still Standing",
-   "answerb": "Tiny Dancer",
-   "answerc": "Rocket Man",
-   "answerd": "Sacrifice",
-   "correct": "A"
- },
- {
-   "topic": "80s Music",
    "question": "Who joined Michael Jackson on vocals in Say Say Say?",
    "answera": "Stevie Wonder",
    "answerb": "Sting",
    "answerc": "Janet Jackson",
    "answerd": "Paul McCartney",
-   "correct": "D"
- },
- {
-   "topic": "80s Music",
-   "question": "Who sand Melt With You?",
-   "answera": "REM",
-   "answerb": "Huey Lewis",
-   "answerc": "Stray Cats",
-   "answerd": "Modern English",
    "correct": "D"
  }
 ]

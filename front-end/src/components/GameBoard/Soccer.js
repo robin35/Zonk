@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "../grid/Grid";
 import { TotalPoints, PointBoard } from "../pages/Points";
 import { RandomNumber, Zonk } from "./Math";
-import Soccer from "../images/soccerball.jpg";
+import Soccer from "../../images/soccerball.jpg";
 // import NavTabs from "./components/NavTabs/index";
 
 

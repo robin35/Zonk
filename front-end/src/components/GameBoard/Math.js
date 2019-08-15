@@ -1,5 +1,5 @@
 import React from "react";
-import Egg from "../images/egg.jpg";
+import Egg from "../../images/egg.jpg";
 
 export function RandomNumber (props) {
     let num= Math.floor((Math.random() * 500) + 1);

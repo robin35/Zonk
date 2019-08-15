@@ -60,7 +60,9 @@ const Login = () => {
                     value='Sign In' />   */}
 
                 <div className='buttons'>
-                    <button>Sign In</button>
+                    <Link to='/'>
+                        <button>Sign In</button>
+                    </Link>
                 </div>
 
           </form>

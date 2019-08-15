@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "../grid/Grid";
 import { TotalPoints, PointBoard } from "../pages/Points";
 import { RandomNumber, Zonk } from "./Math";
-import Egg from "../images/egg.jpg";
+import Egg from "../../images/egg.jpg";
 import QuizQuiz from "../quiz2";
 // import PointBoard from "./StarWars";
 // import { TotalPoints } from "./Points";
