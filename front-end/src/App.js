@@ -6,6 +6,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/landing/Navbar';
+import Welcome from './components/landing/Welcome';
 import Landing from './components/landing/Landing';
 import Signup from './components/login/Signup';
 import Signin from './components/login/Signin';
@@ -41,9 +42,11 @@ const App = () => {
 
           <Navbar />
 
-          <Route exact path='/' component={Landing} />
+          <Route exact path='/' component={Welcome} />
 
           <Switch>
+
+          <Route exact path='/home' component={Landing} />
 
             <Route exact path= '/signin' component={Signin} />
             <Route exact path= '/signup' component={Signup} />
