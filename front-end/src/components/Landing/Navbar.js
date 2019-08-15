@@ -13,8 +13,8 @@ const Navbar = props => {
                     {/* <Link to='/stats' className='nav-item nav-link'>View Stats</Link> */}
                     {/* <Link to='/searchquestions' className='nav-item nav-link'>Search Questions</Link> */}
                     <Link to='/game/math' className='nav-item nav-link'>Math</Link>
-                    <Link to='/game/science' className='nav-item nav-link'>Science</Link>
-                    <Link to='/game/socialstudies' className='nav-item nav-link'>US History</Link>
+                    {/* <Link to='/game/science' className='nav-item nav-link'>Science</Link>
+                    <Link to='/game/socialstudies' className='nav-item nav-link'>US History</Link> */}
                     {/* <Link to='/quiz' className='nav-item nav-link'>Quiz</Link> */}
                 </div>
 
