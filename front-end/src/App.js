@@ -2,7 +2,7 @@
 // Dependencies
 //==================================================================================================================================
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/landing/Navbar';
@@ -38,8 +38,9 @@ const App = () => {
 
     <Router>
 
-      <div className="App">
+      {/* <div className="App"> */}
 
+        <Fragment>
           <Navbar />
 
           <Route exact path='/' component={Welcome} />
@@ -70,7 +71,8 @@ const App = () => {
 
           </Switch>
 
-      </div>
+        </Fragment>
+      {/* </div> */}
 
     </Router>
 
